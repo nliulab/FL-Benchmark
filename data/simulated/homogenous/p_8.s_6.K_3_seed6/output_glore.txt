@@ -1,0 +1,170 @@
+value: 1.0
+0: releasing data lock for iter 0
+Main thread exiting.
+1: releasing data lock for iter 0
+2: releasing data lock for iter 0
+comp: client data available for iter 0
+Iteration 0
+
+ 0.035448487394
+ -1.041655893307
+ 0.541296509184
+ 0.405849886903
+ 0.205872635782
+ 0.114217669356
+ 0.059512614785
+ -0.002402544745
+ -0.002471363131
+
+comp: releasing beta1 lock for iter 0
+value: 1.0416558933065239
+1: sending beta1 for iter 0
+0: sending beta1 for iter 0
+2: sending beta1 for iter 0
+0: releasing data lock for iter 1
+1: releasing data lock for iter 1
+2: releasing data lock for iter 1
+comp: client data available for iter 1
+Iteration 1
+
+ 0.025836868362
+ -1.643627590522
+ 0.861584157521
+ 0.641769619916
+ 0.324142882463
+ 0.183738118807
+ 0.097151589371
+ 0.003195065175
+ 0.000357320254
+
+comp: releasing beta1 lock for iter 1
+value: 0.601971697215486
+0: sending beta1 for iter 1
+1: sending beta1 for iter 1
+2: sending beta1 for iter 1
+0: releasing data lock for iter 2
+1: releasing data lock for iter 2
+2: releasing data lock for iter 2
+comp: client data available for iter 2
+Iteration 2
+
+ 0.021115019976
+ -1.955489244017
+ 1.030111351415
+ 0.763831170024
+ 0.383257992738
+ 0.218064400491
+ 0.117253783383
+ 0.009541997611
+ 0.000305324124
+
+comp: releasing beta1 lock for iter 2
+0: sending beta1 for iter 2
+2: sending beta1 for iter 2
+1: sending beta1 for iter 2
+value: 0.31186165349526784
+0: releasing data lock for iter 3
+1: releasing data lock for iter 3
+2: releasing data lock for iter 3
+comp: client data available for iter 3
+Iteration 3
+
+ 0.020360661696
+ -2.017442200311
+ 1.063803945155
+ 0.788108710142
+ 0.394688566480
+ 0.224525276318
+ 0.121233566696
+ 0.011295038444
+ 0.000136247984
+
+comp: releasing beta1 lock for iter 3
+0: sending beta1 for iter 3
+2: sending beta1 for iter 3
+1: sending beta1 for iter 3
+value: 0.0619529562933161
+0: releasing data lock for iter 4
+1: releasing data lock for iter 4
+2: releasing data lock for iter 4
+comp: client data available for iter 4
+Iteration 4
+
+ 0.020340739887
+ -2.019410393984
+ 1.064877350628
+ 0.788881147501
+ 0.395045316688
+ 0.224722368337
+ 0.121358710819
+ 0.011360843035
+ 0.000128447257
+
+comp: releasing beta1 lock for iter 4
+value: 0.001968193673779872
+1: sending beta1 for iter 4
+0: sending beta1 for iter 4
+2: sending beta1 for iter 4
+0: releasing data lock for iter 5
+1: releasing data lock for iter 5
+2: releasing data lock for iter 5
+comp: client data available for iter 5
+Iteration 5
+
+ 0.020340723410
+ -2.019412288396
+ 1.064878385463
+ 0.788881891810
+ 0.395045655893
+ 0.224722552564
+ 0.121358830526
+ 0.011360913017
+ 0.000128438091
+
+comp: releasing beta1 lock for iter 5
+0: sending beta1 for iter 5
+2: sending beta1 for iter 5
+1: sending beta1 for iter 5
+value: 1.894411548963859E-6
+0: releasing data lock for iter 6
+1: releasing data lock for iter 6
+2: releasing data lock for iter 6
+comp: client data available for iter 6
+Iteration 6
+
+ 0.020340723410
+ -2.019412288398
+ 1.064878385463
+ 0.788881891811
+ 0.395045655893
+ 0.224722552564
+ 0.121358830526
+ 0.011360913017
+ 0.000128438091
+
+comp: releasing beta1 lock for iter 6
+0: sending beta1 for iter 6
+2: sending beta1 for iter 6
+1: sending beta1 for iter 6
+Total training time: 2.715s
+value on exit: 1.7537082896978973E-12
+Covariance matrix:
+
+  0.014148 -0.001483 -0.001657 -0.001730 -0.001665 -0.001543 -0.001645 -0.001560 -0.001531
+ -0.001483  0.003867 -0.001278 -0.000908 -0.000391 -0.000277 -0.000135 -0.000072 -0.000013
+ -0.001657 -0.001278  0.002250  0.000512  0.000235  0.000146  0.000111  0.000041  0.000022
+ -0.001730 -0.000908  0.000512  0.001925  0.000217  0.000183  0.000048  0.000035  0.000027
+ -0.001665 -0.000391  0.000235  0.000217  0.001647  0.000072  0.000029 -0.000001  0.000010
+ -0.001543 -0.000277  0.000146  0.000183  0.000072  0.001547  0.000011 -0.000003 -0.000024
+ -0.001645 -0.000135  0.000111  0.000048  0.000029  0.000011  0.001571  0.000045  0.000021
+ -0.001560 -0.000072  0.000041  0.000035 -0.000001 -0.000003  0.000045  0.001594 -0.000041
+ -0.001531 -0.000013  0.000022  0.000027  0.000010 -0.000024  0.000021 -0.000041  0.001548
+
+SD matrix:
+
+  0.118946  0.062183  0.047435  0.043873  0.040584  0.039326  0.039631  0.039920  0.039339
+
+Computation thread exiting.
+Thread 0 exiting.
+Thread 1 exiting.
+Thread 2 exiting.

@@ -1,0 +1,215 @@
+Arguments:
+	       batch_size : 10
+	clients_per_round : 3
+	          dataset : simulated
+	     drop_percent : 0.0
+	       eval_every : 1
+	           folder : homogenous
+	       folderSeed : 8
+	    learning_rate : 0.01
+	            model : mclr
+	     model_params : (2,)
+	               mu : 0.0
+	       num_epochs : 20
+	        num_iters : 1
+	       num_rounds : 10
+	        optimizer : fedprox
+	             seed : 0
+Using Federated prox to Train
+
+=========================Options=============================
+-max_depth                  10000
+-min_bytes                  0
+-min_peak_bytes             0
+-min_residual_bytes         0
+-min_output_bytes           0
+-min_micros                 0
+-min_accelerator_micros     0
+-min_cpu_micros             0
+-min_params                 0
+-min_float_ops              1
+-min_occurrence             0
+-step                       -1
+-order_by                   float_ops
+-account_type_regexes       .*
+-start_name_regexes         .*
+-trim_name_regexes          
+-show_name_regexes          .*
+-hide_name_regexes          
+-account_displayed_op_only  true
+-select                     float_ops
+-output                     stdout:
+
+==================Model Analysis Report======================
+
+Doc:
+scope: The nodes in the model graph are organized by their names, which is hierarchical like filesystem.
+flops: Number of float operations. Note: Please read the implementation for the math behind it.
+
+Profile:
+node name | # float_ops
+_TFProfRoot (--/60 flops)
+  Neg (8/8 flops)
+  PGD/update_Variable/AssignSub (8/8 flops)
+  PGD/update_Variable/mul (8/8 flops)
+  PGD/update_Variable/mul_1 (8/8 flops)
+  PGD/update_Variable/sub (8/8 flops)
+  gradients/Neg_grad/Neg (8/8 flops)
+  PGD/update_Variable_1/AssignSub (1/1 flops)
+  PGD/update_Variable_1/mul (1/1 flops)
+  PGD/update_Variable_1/mul_1 (1/1 flops)
+  PGD/update_Variable_1/sub (1/1 flops)
+  binary_crossentropy/sub (1/1 flops)
+  binary_crossentropy/weighted_loss/Mul (1/1 flops)
+  gradients/binary_crossentropy/Mean_grad/Maximum (1/1 flops)
+  gradients/binary_crossentropy/weighted_loss/Mul_grad/Mul (1/1 flops)
+  gradients/binary_crossentropy/weighted_loss/Mul_grad/Mul_1 (1/1 flops)
+  gradients/binary_crossentropy/weighted_loss/value_grad/Neg (1/1 flops)
+  gradients/binary_crossentropy/weighted_loss/value_grad/mul (1/1 flops)
+  gradients/truediv_grad/Neg (1/1 flops)
+
+======================End of Report==========================
+3 Clients in Total
+Training with 3 workers ---
+At round 0 accuracy: 0.4257142857142857
+At round 0 training accuracy: 0.4363265306122449
+At round 0 training loss: 0.6931464076042175
+gradient difference: 0.0007432374725976114
+At round 0 model param: 
+[array([[-1.84509517],
+       [ 0.88759447],
+       [ 0.70919417],
+       [ 0.33407863],
+       [ 0.19805694],
+       [ 0.11326038],
+       [ 0.00360042],
+       [ 0.0075276 ]]), 0.06996167291487966]
+At round 1 accuracy: 0.4257142857142857
+At round 1 training accuracy: 0.4363265306122449
+At round 1 training loss: 0.402000686952046
+gradient difference: 0.0008090462023397555
+At round 1 model param: 
+[array([[-2.06185053e+00],
+       [ 9.78984824e-01],
+       [ 7.86085921e-01],
+       [ 3.65619906e-01],
+       [ 2.07604029e-01],
+       [ 1.17751275e-01],
+       [ 3.16499706e-03],
+       [-7.74116854e-04]]), 0.08639596577268094]
+At round 2 accuracy: 0.4257142857142857
+At round 2 training accuracy: 0.4363265306122449
+At round 2 training loss: 0.3999320524079459
+gradient difference: 0.000853415734301121
+At round 2 model param: 
+[array([[-2.10777433],
+       [ 0.99750617],
+       [ 0.80662267],
+       [ 0.37800263],
+       [ 0.21319765],
+       [ 0.12232965],
+       [ 0.00408639],
+       [ 0.00295454]]), 0.09961427242628165]
+At round 3 accuracy: 0.4257142857142857
+At round 3 training accuracy: 0.4363265306122449
+At round 3 training loss: 0.3998138223375593
+gradient difference: 0.000869457408750642
+At round 3 model param: 
+[array([[-2.1145401 ],
+       [ 1.00627451],
+       [ 0.813154  ],
+       [ 0.38238311],
+       [ 0.22025632],
+       [ 0.12693868],
+       [ 0.00814897],
+       [ 0.00541178]]), 0.10980261928801026]
+At round 4 accuracy: 0.4257142857142857
+At round 4 training accuracy: 0.4363265306122449
+At round 4 training loss: 0.3999480519975935
+gradient difference: 0.000883393246283458
+At round 4 model param: 
+[array([[-2.11562443],
+       [ 1.01000732],
+       [ 0.81551648],
+       [ 0.38520253],
+       [ 0.22458643],
+       [ 0.12794764],
+       [ 0.01105313],
+       [ 0.00902702]]), 0.11600903840735555]
+At round 5 accuracy: 0.4257142857142857
+At round 5 training accuracy: 0.4363265306122449
+At round 5 training loss: 0.40015063115528654
+gradient difference: 0.0008910291773377457
+At round 5 model param: 
+[array([[-2.12193789],
+       [ 1.00439072],
+       [ 0.81118913],
+       [ 0.3809313 ],
+       [ 0.21768431],
+       [ 0.12244418],
+       [ 0.00572973],
+       [ 0.00238575]]), 0.11348120898141392]
+At round 6 accuracy: 0.4257142857142857
+At round 6 training accuracy: 0.4363265306122449
+At round 6 training loss: 0.3998530166489737
+gradient difference: 0.0008781452081417217
+At round 6 model param: 
+[array([[-2.11977935],
+       [ 1.00710001],
+       [ 0.81346912],
+       [ 0.38166744],
+       [ 0.21846553],
+       [ 0.12369137],
+       [ 0.00456472],
+       [ 0.00478816]]), 0.11607045513976898]
+At round 7 accuracy: 0.4257142857142857
+At round 7 training accuracy: 0.4363265306122449
+At round 7 training loss: 0.3999063117163522
+gradient difference: 0.0008801311038284516
+At round 7 model param: 
+[array([[-2.12433570e+00],
+       [ 1.00312412e+00],
+       [ 8.09116883e-01],
+       [ 3.77253805e-01],
+       [ 2.12704695e-01],
+       [ 1.18828693e-01],
+       [-1.46958871e-03],
+       [ 3.61385888e-04]]), 0.11261748881744486]
+At round 8 accuracy: 0.4257142857142857
+At round 8 training accuracy: 0.4363265306122449
+At round 8 training loss: 0.399826956646783
+gradient difference: 0.0008675283384458314
+At round 8 model param: 
+[array([[-2.12176503e+00],
+       [ 1.00649479e+00],
+       [ 8.08211514e-01],
+       [ 3.80472021e-01],
+       [ 2.15482541e-01],
+       [ 1.26307192e-01],
+       [ 6.22246095e-03],
+       [ 1.77028722e-03]]), 0.11605889047496021]
+At round 9 accuracy: 0.4257142857142857
+At round 9 training accuracy: 0.4363265306122449
+At round 9 training loss: 0.39986575501305716
+gradient difference: 0.0008781446331821291
+At round 9 model param: 
+[array([[-2.12340713],
+       [ 1.00387804],
+       [ 0.81005926],
+       [ 0.3766099 ],
+       [ 0.21421085],
+       [ 0.12520983],
+       [ 0.0027258 ],
+       [-0.00225884]]), 0.11429857130029372]
+Total training time: 42.5720751285553s
+At round 10 accuracy: 0.4257142857142857
+At round 10 training accuracy: 0.4363265306122449
+At round 10 model param: 
+[array([[-2.12340713],
+       [ 1.00387804],
+       [ 0.81005926],
+       [ 0.3766099 ],
+       [ 0.21421085],
+       [ 0.12520983],
+       [ 0.0027258 ],
+       [-0.00225884]]), 0.11429857130029372]

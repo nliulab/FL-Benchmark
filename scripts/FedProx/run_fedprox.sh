@@ -1,0 +1,1 @@
+python3  -u main.py --dataset=$1 --optimizer='fedprox' --learning_rate=0.01 --num_rounds=200 --clients_per_round=3 --eval_every=1 --batch_size=10 --num_epochs=20 --drop_percent=0 --model='mclr' --mu=$2 --folder=differentX_mean_0.1_sd_0.8_1.2 --folderSeed=p_8.s_6.K_3_seed1

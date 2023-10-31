@@ -1,0 +1,36 @@
+
+ We use BSD 2-Clause license for this program
+
+  https://github.com/tsungtingkuo/ensemble/blob/master/LICENSE
+
+# # # # # # # # # # # # # # # # # CLIENT # # # # # # # # # # # # # # # # # # #
+1. Configure in "client_config" according to your data
+2. Compile and start Clients AFTER Server.
+3. The number of Client threads you need to open is as many as the number you set in "server_config"
+Linux environment
+Compile:
+gcj --classpath=Jama-1.0.2.jar -C Client.java
+Execute:
+java -cp Jama-1.0.2.jar;. Client <data file name>
+--------------------------------------------------------------------------------
+Windows environment
+Compile:
+javac -d . -cp Jama-1.0.2.jar Client.java
+Execute:
+java -cp Jama-1.0.2.jar;. Client <data file name>
+
+
+# # # # # # # # # # # # # # # # # SERVER # # # # # # # # # # # # # # # # # # #
+1. Configure in "server_config" according to your data
+2. Compile and start Server BEFORE Clients.
+Linux environment
+Compile:
+gcj --classpath=Jama-1.0.2.jar -C Server.java
+Execute:
+java -cp Jama-1.0.2.jar:. Server
+--------------------------------------------------------------------------------
+Windows environment
+Compile:
+javac -d . -cp Jama-1.0.2.jar Server.java
+Execute:
+java -cp Jama-1.0.2.jar;. Server
