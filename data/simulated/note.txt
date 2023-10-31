@@ -1,2 +1,0 @@
-The simulated data is not provided with this repository and can be obtained using the source code available at scripts/R/Sim.
-See more details in README.md for usage.
