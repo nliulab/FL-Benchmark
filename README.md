@@ -70,7 +70,7 @@ python extract_glore_all.py ../../data/simulated
   - Strategy 2: q-FedAvg
   - Strategy 3: FedAvgM
 - Run script ```python3 scripts/Flower/run_flwr_all_win.py [path]``` for Windows and ```python3 scripts/Flower/run_flwr_all.py [path]``` for macOS, with output file `output_flwr_fedavg.txt` stored in each seed folder.
-- Run script ```python3 scripts/data_LR/extract_flower_fedavg.py [path] ``` to extract coefficients and communication cost. The same for `scripts/data_LR/extract_flower_fedavgM.py` and `scripts/data_LR/extract_flower_Qfedavg.py`.
+- Run script ```python3 scripts/data_LR/extract_flower_fedavg.py [path]``` to extract coefficients and communication cost. The same for `scripts/data_LR/extract_flower_fedavgM.py` and `scripts/data_LR/extract_flower_Qfedavg.py`.
 For example:
 ```
 python scripts/data_LR/extract_flower_fedavg.py data/simulated/homogenous
