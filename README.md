@@ -35,12 +35,12 @@ In this section, we will walk through a demonstration of generating and analyzin
 
 ### Step I. Generate simulated data
 
-Run script `scripts/R/Sim/main.R` to generate 50 seeds of simuulation, with the output saved in the `data/simulated` directory.
+Run script `scripts/R/Sim/main.R` to generate 50 seeds of simulation, with the output saved in the `data/simulated` directory.
 
 ### Step II. Generate local and central models
 
-- Run script `scripts/R/train.local.R` to produce local results.
-- Run script `scripts/R/centralized.R` to produce global results.
+- Run script `scripts/R/train.local.R` to produce local results. Point estimate results like `Coef.local.Site1.csv` are stored in each seed folder. 
+- Run script `scripts/R/centralized.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder. 
 
 ### Step III. Generate FL models
 
@@ -58,7 +58,7 @@ For example:
 ```
 python run_glore.py ../../data/simulated/homogenous
 ```
-- Run script `scripts/data_LR/extract_glore_all.py` to extract model coefficients and total training time for all datasets and seeds, with output file `Coef_glore.csv` and `Cov_glore.csv` stored in each seed folder.
+- Run script `scripts/data_LR/extract_glore_all.py` to extract model coefficients and total training time for all datasets and seeds, with output files `Coef_glore.csv` and `Cov_glore.csv` stored in each seed folder.
 ```
 cd scripts/data_LR
 python extract_glore_all.py ../../data/simulated
@@ -77,7 +77,7 @@ python scripts/data_LR/extract_flower_fedavg.py data/simulated/homogenous
 ```
 
 #### (3). FedProx
-- Convert training and testing data to json format and copy them to the correct FedProx input data folder.
+- Convert training and testing data to JSON format and copy them to the correct FedProx input data folder.
 ```
 cd scripts/data_LR
 python convert_data_to_json.py
