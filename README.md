@@ -94,7 +94,7 @@ python move_data.py ../../data/simulated/[path]
 cd scripts/FedProx
 python fedprox.py [path]
 ```
-- Run script ```python3 extract_fedprox.py [output path]``` to extract model coefficients and communication time,  with output files stored in each seed folder.
+- Run script ```python extract_fedprox.py [output path]``` to extract model coefficients and communication time,  with output files stored in each seed folder.
 
 ### Step IV. Result analysis
 - AUC of prediction task
