@@ -27,7 +27,7 @@ Federated Learning (FL) has shown promising potential for safeguarding data priv
   
   To install the required Python packages, run: ```pip install -r requirements.txt``` (use `requirements_win.txt` for Windows).
 
-**Extra notes for using TensorFlow-** The current version is for macOS. For Windows users, when importing Tensorflow, replace current lines with `import tensorflow as tf`.
+**Extra notes for using TensorFlow:** The current version is for macOS. For Windows users, when importing Tensorflow, replace the current lines with `import tensorflow as tf`.
 
 ## A demo for generating and analyzing simulated data
 
