@@ -102,7 +102,7 @@ python fedprox.py [path]
   - Run script `scripts/Evaluation/auc_eval.R` to draw violin plots for AUC values, with results stored in `scripts/Evaluation/AUC`.
   ![AUC Plot](scripts/Evaluation/AUC/homogenous_auc_plot.png)
 - Coefficient estimate
-  - Run script `scripts/Evaluation/coef_eval.R` to extract coefficients of all methods, with result stored in `scripts/Evaluation/Coef`.
+  - Run script `scripts/Evaluation/coef_eval.R` to extract coefficients of all methods, with results stored in `scripts/Evaluation/Coef`.
   - Run script `scripts/Evaluation/coef_eval.R` to draw violin plots for estimated coefficients, with results stored in `scripts/Evaluation/Coef`.
 ![Coefficient Plot](scripts/Evaluation/Coef/homogenous_coef_plot.png)
 
