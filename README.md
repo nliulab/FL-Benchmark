@@ -20,7 +20,7 @@ This repository contains code that references [FedProx](https://github.com/litia
 
 ## Supplementary materials
 
-<a href="Supplementary/FLB_algorithms_Supplement.pdf" download="FLB_supplmentary">Download</a> Supplmentray Materials
+<a href="Supplementary/FLB_algorithms_Supplement.pdf" download="FLB_supplmentary">Download</a> Supplementray materials
 
 ## Introduction
 
