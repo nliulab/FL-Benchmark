@@ -22,6 +22,8 @@ This repository contains code that references [FedProx](https://github.com/litia
 
 [Supplmentray Materials](Supplementary/FLB_algorithms_Supplement.pdf)
 
+<a href="Supplementary/FLB_algorithms_Supplement.pdf" download="FLB_supplmentary">Download</a> Supplmentray Materials
+
 ## Introduction
 
 Federated Learning (FL) has shown promising potential for safeguarding data privacy in healthcare collaborations. Although the term “FL” was originally coined by engineers,  the statistical community has also explored similar privacy-preserving algorithms. Statistical FL algorithms, however, remain considerably less recognized than their engineering counterparts. Our goal was to bridge the gap by presenting the first comprehensive comparison of FL frameworks from both engineering and statistical domains. We evaluated five FL frameworks using both simulated and real-world data. The results indicate that statistical FL algorithms yield less biased point estimates for model coefficients and offer convenient confidence interval estimations. In contrast, engineering-based methods tend to generate more accurate predictions, sometimes surpassing central pooled and statistical FL models. This study underscores the relative strengths and weaknesses of both types of methods, emphasizing the need for increased awareness and their integration in future FL applications. 
