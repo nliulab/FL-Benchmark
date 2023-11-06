@@ -1,5 +1,5 @@
 # Federated Learning for Clinical Structured Data: A Benchmark Comparison of Engineering and Statistical Approaches
-
+- [Supplementary materials](#supplementary-materials)
 - [Introduction](#introduction)
 - [System requirements](#system-requirements)
 - [A demo for generating and analyzing simulated data](#a-demo-for-generating-and-analyzing-simulated-data)
@@ -17,6 +17,10 @@ Python and R workflow for generating and analyzing simulated datasets for benchm
 <!--See our new [Preprint](https://arxiv.org/abs/2303.00282) for the whole story.-->
 
 This repository contains code that references [FedProx](https://github.com/litian96/FedProx) and [GLORE](https://github.com/x1jiang/glore).
+
+## Supplementary materials
+
+[Supplmentray Materials](Supplementary/FLB_algorithms_Supplement.pdf)
 
 ## Introduction
 
