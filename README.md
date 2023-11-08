@@ -121,7 +121,7 @@ The average round result will be generated at `scripts/Evaluation/time_rounds`.
 
 ## Citation
 
-xxx
+S. Li, et al. "Federated learning for clinical structured data: A benchmark comparison of engineering and statistical approaches." arXiv preprint arXiv:2311.03417 (2023).
 
 ## Contact
 
