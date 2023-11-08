@@ -14,9 +14,9 @@
 - [Contact](#contact)
 
 Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/)). 
-<!--See our new [Preprint](https://arxiv.org/abs/2303.00282) for the whole story.-->
+See our new [Preprint](https://arxiv.org/abs/2311.03417) for the whole story.
 
-This repository contains code that references [FedProx](https://github.com/litian96/FedProx) and [GLORE](https://github.com/x1jiang/glore).
+This repository incorporates some code from [FedProx](https://github.com/litian96/FedProx) and [GLORE](https://github.com/x1jiang/glore).
 
 ## Supplementary materials
 
