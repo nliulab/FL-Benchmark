@@ -18,7 +18,6 @@ get.coef.pool <- function(v1, method = "meta", K, sample_size){
 }
 
 get.meta.1seed <- function(dir, sparse){
-  setwd(dir)
   dat.list = get.dat(dir)
   N = c()
   coef.vec = c()
@@ -51,6 +50,7 @@ do.meta.all <- function(mainDir, sparse = F){
   dir_list =list.dirs(mainDir, recursive = FALSE)
   for(dir in dir_list){
     get.meta.1seed(dir, sparse)
+    setwd("../../../..")
   }
 }
 

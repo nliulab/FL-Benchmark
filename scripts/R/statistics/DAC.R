@@ -3,27 +3,18 @@ library(MASS)
 do_DAC <- function(mainDir, niter=3, ridge=F, lambda = NULL, family = "binomial"){
   dir_list =list.dirs(mainDir, recursive = FALSE)
   for(dir in dir_list){
-    setwd(dir)
-    get.dat(dir)
+    
     startTime <- Sys.time()
     coef1 = DCOS.FUN(get.dat.DAC(dir), niter, ridge = F, lambda, family)
-    #print("just called DCOS.FUN, line 10")
     endTime <- Sys.time()
     sink("DAC.lasso.txt")
     print(endTime - startTime)
     sink()
     closeAllConnections()
-    # startTime <- Sys.time()
-    # coef2 = DCOS.FUN(get.dat.DAC(dir), niter, ridge = T, lambda, family)
-    # print("just called DCOS.FUN, line 18")
-    # endTime <- Sys.time()
-    # sink("DAC.ridge.txt")
-    # print(endTime - startTime)
-    # sink()
-    # closeAllConnections()
+
     write.csv(coef1, "coef_DAC_lasso.csv")
-    #write.csv(coef2, "coef_DAC_ridge.csv")
     print(sprintf("finished %s", dir))
+    setwd("../../../..")
   }
 }
 
@@ -55,8 +46,7 @@ DCOS.FUN=function(dat.list, niter, ridge=F, lambda=NULL, family){
   if(ridge==T){
     bini = as.vector(coef(glmnet(x1,y1,alpha=0,standardize=F,lambda=lambda,family=family)))
   } 
-  #print(length(bini))
-  ##update
+  #update
   update=iteration.fun2(dat.list=dat.list,bini=bini,kk.list=1:K)
   bnew.update=apply(update$b.k,1,mean)
   for(ii in 1:(niter-1)){

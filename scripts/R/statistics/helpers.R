@@ -17,6 +17,7 @@ get.dat.DAC <- function(dir){
   K = length(file_list)
   dat.list <- vector("list", K)
   i = 0
+  setwd(dir)
   for (file_name in file_list) {
     i = i+1
     dat_temp = read.csv(file_name) %>% as.matrix()

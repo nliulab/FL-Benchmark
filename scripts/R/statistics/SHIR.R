@@ -4,7 +4,7 @@ library(glmnet)
 do_SHIR <- function(mainDir, tune = "BIC"){
   dir_list =list.dirs(mainDir, recursive = FALSE)
   for(dir in dir_list){
-    setwd(dir)
+    
     startTime <- Sys.time()
     dat <- get.dat(dir)
     X_lst <- list()
@@ -13,13 +13,7 @@ do_SHIR <- function(mainDir, tune = "BIC"){
     for(i in 1:M){
       X_lst[[i]] <- as.matrix(dat[[i]]$dat[, -1])
       Y_lst[[i]] <- as.matrix(dat[[i]]$dat[, 1])
-
-      #for real data
-      # X_lst[[i]] <- as.matrix(dat[[i]]$dat[, -ncol(dat[[i]]$dat)])
-      # Y_lst[[i]] <- as.matrix(dat[[i]]$dat[, ncol(dat[[i]]$dat)])
     }
-    
-    # p = X_lst[[1]] %>% nrow
     length_lst <- c()
     
     I_lst <- vector('list', M)
@@ -39,7 +33,6 @@ do_SHIR <- function(mainDir, tune = "BIC"){
         length_lst <- c(length_lst, length(Y))
       }
     )
-    #print(beta_lst)
     system.time(
       SHIR_train <- SHIR_fit(I_lst, U_lst, length_lst)
     )
@@ -54,6 +47,7 @@ do_SHIR <- function(mainDir, tune = "BIC"){
     write.csv(coef1, "coef_SHIR_lasso.csv")
 
     print(sprintf("finished %s", dir))
+    setwd("../../../..")
   }
 }
 

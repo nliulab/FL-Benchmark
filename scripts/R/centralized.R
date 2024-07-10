@@ -39,14 +39,3 @@ do.central.all <- function(mainDir, sparse = F){
     get.central.1seed(dir, sparse)
   }
 }
-
-#Low Dim
-Dir = "data/simulated"
-dir_list = list.dirs(Dir, recursive = FALSE)
-lapply(dir_list, do.central.all)
-
-#High Dim
-Dir = "data/simulated_HD"
-dir_list = list.dirs(Dir, recursive = FALSE)
-lapply(dir_list, do.central.all, sparse = T)
-
