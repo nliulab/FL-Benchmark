@@ -46,8 +46,10 @@ Run script `scripts/R/Sim/main.R` to generate 50 seeds of simulation, with the o
 
 ### Step II. Generate local and central models
 
-- Run script `scripts/R/train.local.R` to produce local results. Point estimate results like `Coef.local.Site1.csv` are stored in each seed folder. 
-- Run script `scripts/R/centralized.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder. 
+- Run script `scripts/R/main.R` to produce local results. Point estimate results like `Coef.local.Site1.csv` are stored in each seed folder. 
+- Run script `scripts/R/main.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder.
+- Run script `scripts/R/main.R` to produce meta results. Point estimate results `Coef_meta.csv` stored in each seed folder.
+
 
 ### Step III. Generate FL models
 
