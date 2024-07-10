@@ -1,12 +1,11 @@
 library(pROC)
 library(tidyverse)
 library(glmnet)
+library(Matrix)
 # functions to fit centralized model
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
-source("statistics/helpers.r")
+source("scripts/R/statistics/helpers.R")
 
 get.dat.c.single <- function(dir){
-  setwd(dir)
   dat.list = get.dat(dir)
   df = data.frame()
   N = 0
@@ -17,32 +16,37 @@ get.dat.c.single <- function(dir){
   return(df)
 }
 
-
-get.central.1seed <- function(dir){
-  setwd(dir)
+#-----------------Central---------------------------------------
+get.central.1seed <- function(dir, sparse = F){
   df = get.dat.c.single(dir) %>% as.data.frame()
-  res = glm(y ~ ., data = df, family = 'binomial')
-  coef = coef(res)
-  write.csv(coef, "Coef_central.csv")
-}
-
-get.local.1seed <- function(dir, sparse=F){
-  df = get.dat.c.single(dir)
-  for(i in seq_along(dat.list)){
-
+  setwd("../../../..")
+  print(dir)
+  if(sparse){
+    x_train = df[,-1]
+    coef1  = lasso.fun(x = as.matrix(x_train), y = as.vector(df$y), family = 'binomial')
+    write.csv(coef1$coef %>% as.vector(), paste0(dir,"/Coef.central.lasso.csv"))
+  }else{
+    res = glm(y ~ ., data = df, family = 'binomial')
+    coef = coef(res)
+    write.csv(coef, paste0(dir,"/Coef_central.csv"))
   }
 }
 
-do.central.all <- function(mainDir){
+
+do.central.all <- function(mainDir, sparse = F){
   dir_list =list.dirs(mainDir, recursive = FALSE)
   for(dir in dir_list){
-    get.central.1seed(dir)
+    get.central.1seed(dir, sparse)
   }
 }
 
-dir = "..."
-do.central.all(dir)
-
+#Low Dim
 Dir = "data/simulated"
 dir_list = list.dirs(Dir, recursive = FALSE)
 lapply(dir_list, do.central.all)
+
+#High Dim
+Dir = "data/simulated_HD"
+dir_list = list.dirs(Dir, recursive = FALSE)
+lapply(dir_list, do.central.all, sparse = T)
+

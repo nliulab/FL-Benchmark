@@ -99,7 +99,7 @@ Sim.group <- function(para, Sig.X, K, N, mainDir, subDir = "homogenous", heterog
     write.csv(train, sprintf("Site%d.train.N_%d.csv", i, nrow(train)), row.names = F)
     write.csv(test, sprintf("Site%d.test.N_%d.csv", i, nrow(test)), row.names = F)
   }
-  setwd("..")
+  setwd("../../../..")
 }
 
 

@@ -1,7 +1,5 @@
-rm(list = ls())
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
-sim_path = "../../../data/simulated"
-source("sim_fun.R") 
+sim_path = "data/simulated"
+source("scripts/R/Sim/sim_fun.R") 
 myseed = c(1:50)
 #### I. homogeneous settings:
 para = list(p = 8, s= 6,
