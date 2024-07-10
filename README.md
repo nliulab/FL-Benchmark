@@ -13,7 +13,7 @@
 - [Citation](#citation)
 - [Contact](#contact)
 
-Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/)). 
+Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572), [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)). 
 
 See our new [Preprint](https://arxiv.org/abs/2311.03417) for the whole story.
 
