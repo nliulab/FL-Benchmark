@@ -8,7 +8,7 @@ def list_data_dir(filepath):
            cmd = 'python3 FL_run.py ' + root
            print(cmd)
            os.system(cmd)
-           time.sleep(5)
+           time.sleep(15)
 
 
 def main():

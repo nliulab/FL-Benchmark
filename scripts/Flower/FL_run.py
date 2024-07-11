@@ -26,7 +26,7 @@ print(cmd)
 # time.sleep(1)
 # loop through all files in the directory:
 for filename in os.listdir(directory):
-    if "Site" not in filename or 'Coef' in filename:
+    if "Site" not in filename or 'Coef' in filename or 'train' not in filename:
         continue
     cmd = "nohup python client.py {} {} >/dev/null 2>&1 &".format(directory, filename)
     os.system(cmd)

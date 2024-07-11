@@ -1,3 +1,4 @@
 .DS_Store
 .idea
 scripts/FedProx/flearn/*/__pycache__
+scripts/Flower/__pycache__
