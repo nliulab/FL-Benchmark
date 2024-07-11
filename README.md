@@ -13,7 +13,7 @@
 - [Citation](#citation)
 - [Contact](#contact)
 
-Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/)). 
+Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572), [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)). 
 
 See our new [Preprint](https://arxiv.org/abs/2311.03417) for the whole story.
 
@@ -46,8 +46,10 @@ Run script `scripts/R/Sim/main.R` to generate 50 seeds of simulation, with the o
 
 ### Step II. Generate local and central models
 
-- Run script `scripts/R/train.local.R` to produce local results. Point estimate results like `Coef.local.Site1.csv` are stored in each seed folder. 
-- Run script `scripts/R/centralized.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder. 
+- Run script `scripts/R/main.R` to produce local results. Point estimate results like `Coef.local.Site1.csv` are stored in each seed folder. 
+- Run script `scripts/R/main.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder.
+- Run script `scripts/R/main.R` to produce meta results. Point estimate results `Coef_meta.csv` stored in each seed folder.
+
 
 ### Step III. Generate FL models
 
