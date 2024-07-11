@@ -21,7 +21,7 @@ class Model(object):
         # create computation graph        
         self.graph = tf.Graph()
         with self.graph.as_default():
-            tf.set_random_seed(123+seed)
+            tf.set_random_seed(123 + seed)
             self.features, self.labels, self.train_op, self.grads, self.eval_metric_ops, self.loss, self.pred = self.create_model(optimizer)
             self.saver = tf.train.Saver()
         self.sess = tf.Session(graph=self.graph)
@@ -38,21 +38,15 @@ class Model(object):
         """Model function for Logistic Regression."""
         features = tf.placeholder(tf.float32, shape=[None, 8], name='features')
         labels = tf.placeholder(tf.int64, shape=[None,], name='labels')
-        # logits = tf.layers.dense(inputs=features, units=self.num_classes, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.001))
-        # logits = tf.layers.dense(inputs=features, units=self.num_classes, kernel_regularizer=tf.keras.regularizers.l2(0.001))
         w = tf.Variable(np.zeros([8, 1]), dtype=tf.float32)
         b = tf.Variable(0, dtype=tf.float32)
-        # init = tf.initialize_all_variables()
         logits = 1. / (1 + tf.exp(tf.matmul(features, -w) - b))
         bce = tf.keras.losses.BinaryCrossentropy(from_logits=False)
         loss = bce(labels, logits)
-        # loss = loss + 0.01 * tf.reduce_sum(tf.abs(w))  # L1 regularization
-        # loss = loss + 0.01 * tf.reduce_sum(tf.square(w))  # L2 regularization
         predictions = {
             "classes": tf.argmax(input=logits, axis=1),
             "probabilities": tf.nn.softmax(logits, name="softmax_tensor")
             }
-        # loss = tf.losses.sparse_softmax_cross_entropy(labels=labels, logits=logits)
 
         grads_and_vars = optimizer.compute_gradients(loss)
         grads, _ = zip(*grads_and_vars)

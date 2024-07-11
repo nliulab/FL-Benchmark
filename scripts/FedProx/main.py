@@ -11,7 +11,7 @@ tf.disable_v2_behavior()
 # GLOBAL PARAMETERS
 OPTIMIZERS = ['fedavg', 'fedprox', 'feddane', 'fedddane', 'fedsgd', 'fedprox_origin']
 DATASETS = ['sent140', 'nist', 'shakespeare', 'mnist', 
-'synthetic_iid', 'synthetic_0_0', 'synthetic_0.5_0.5', 'synthetic_1_1','simulated']  # NIST is EMNIST in the paepr
+'synthetic_iid', 'synthetic_0_0', 'synthetic_0.5_0.5', 'synthetic_1_1','simulated', 'simulated_HD']  # NIST is EMNIST in the paepr
 
 
 MODEL_PARAMS = {
@@ -26,6 +26,9 @@ MODEL_PARAMS = {
     'simulated.mclr': (2, ), # num_classes
     'simulated.mclr-lasso': (2, ), # num_classes
     'simulated.mclr-ridge': (2, ), # num_classes
+    'simulated_HD.mclr': (2, ), # num_classes
+    'simulated_HD.mclr-lasso': (2,),  # num_classes
+    'simulated_HD.mclr-ridge': (2,),  # num_classes
 }
 
 

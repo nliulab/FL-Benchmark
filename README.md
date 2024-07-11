@@ -95,15 +95,28 @@ python scripts/data_LR/extract_flower_fedavg.py data/simulated/homogenous
 - Convert training and testing data to JSON format and copy them to the correct FedProx input data folder.
 ```
 cd scripts/data_LR
-python convert_data_to_json.py
-python move_data.py ../../data/simulated/[path]
+python convert_data_to_json.py ../../data/simulated
+python move_data.py simulated ../../data/simulated/[path]
 ```
+For example:
+```
+python move_data.py simulated ../../data/simulated/homogenous
+```
+
 - Run script `scripts/FedProx/fedprox.py`, with output files like `fedprox_lr0.01_drop0_mu0` stored in each seed folder.
 ```
 cd scripts/FedProx
-python fedprox.py [path]
+python fedprox.py simulated [dataset]
+```
+For example:
+```
+python fedprox.py simulated homogenous
 ```
 - Run script ```python extract_fedprox.py [output path]``` to extract model coefficients and communication, with output files stored in each seed folder.
+For example:
+```
+python extract_fedprox.py simulated
+```
 
 ### Step IV. Result analysis
 - AUC of prediction task
