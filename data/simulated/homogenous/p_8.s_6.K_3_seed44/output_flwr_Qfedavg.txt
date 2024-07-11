@@ -1,47 +1,34 @@
-2023-09-18 17:59:57.495368: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
-2023-09-18 17:59:57.495559: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
-INFO flwr 2023-09-18 18:00:05,848 | app.py:151 | Starting Flower server, config: ServerConfig(num_rounds=30, round_timeout=None)
-INFO flwr 2023-09-18 18:00:05,906 | app.py:172 | Flower ECE: gRPC server running (30 rounds), SSL is disabled
-INFO flwr 2023-09-18 18:00:05,906 | server.py:86 | Initializing global parameters
-INFO flwr 2023-09-18 18:00:05,906 | server.py:273 | Requesting initial parameters from one random client
-INFO flwr 2023-09-18 18:00:06,812 | server.py:277 | Received initial parameters from one random client
-INFO flwr 2023-09-18 18:00:06,812 | server.py:88 | Evaluating initial parameters
+2024-07-11 12:45:35.435124: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2024-07-11 12:45:35.436725: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+INFO flwr 2024-07-11 12:45:44,568 | app.py:165 | Starting Flower server, config: ServerConfig(num_rounds=30, round_timeout=None)
+INFO flwr 2024-07-11 12:45:44,655 | app.py:179 | Flower ECE: gRPC server running (30 rounds), SSL is disabled
+INFO flwr 2024-07-11 12:45:44,655 | server.py:89 | Initializing global parameters
+INFO flwr 2024-07-11 12:45:44,655 | server.py:276 | Requesting initial parameters from one random client
+INFO flwr 2024-07-11 12:45:45,724 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-07-11 12:45:45,725 | server.py:91 | Evaluating initial parameters
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:06,828 | server.py:95 | initial parameters (loss, other metrics): 0.6931471805599453, {'accuracy': 0.4166666666666667}
-INFO flwr 2023-09-18 18:00:06,828 | server.py:101 | FL starting
-DEBUG flwr 2023-09-18 18:00:06,900 | server.py:223 | fit_round 1: strategy sampled 1 clients (out of 3)
-DEBUG flwr 2023-09-18 18:00:06,923 | server.py:237 | fit_round 1 received 1 results and 0 failures
+INFO flwr 2024-07-11 12:45:45,741 | server.py:98 | initial parameters (loss, other metrics): 0.6931471805599453, {'accuracy': 0.4166666666666667}
+INFO flwr 2024-07-11 12:45:45,741 | server.py:104 | FL starting
+DEBUG flwr 2024-07-11 12:45:46,006 | server.py:227 | fit_round 1: strategy sampled 1 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,031 | server.py:241 | fit_round 1 received 1 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-WARNING flwr 2023-09-18 18:00:06,932 | qfedavg.py:237 | No fit_metrics_aggregation_fn provided
+WARNING flwr 2024-07-11 12:45:46,041 | qfedavg.py:225 | No fit_metrics_aggregation_fn provided
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:06,940 | server.py:125 | fit progress: (1, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.1114607000000003)
-DEBUG flwr 2023-09-18 18:00:06,941 | server.py:173 | evaluate_round 1: strategy sampled 3 clients (out of 3)
-DEBUG flwr 2023-09-18 18:00:06,965 | server.py:187 | evaluate_round 1 received 3 results and 0 failures
-WARNING flwr 2023-09-18 18:00:06,965 | qfedavg.py:268 | No evaluate_metrics_aggregation_fn provided
-DEBUG flwr 2023-09-18 18:00:06,967 | server.py:223 | fit_round 2: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:06,991 | server.py:237 | fit_round 2 received 4 results and 0 failures
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,010 | server.py:125 | fit progress: (2, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.18179370000000006)
-DEBUG flwr 2023-09-18 18:00:07,010 | server.py:173 | evaluate_round 2: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,037 | server.py:187 | evaluate_round 2 received 4 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,039 | server.py:223 | fit_round 3: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,073 | server.py:237 | fit_round 3 received 4 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,049 | server.py:131 | fit progress: (1, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.30738350000000025)
+DEBUG flwr 2024-07-11 12:45:46,049 | server.py:178 | evaluate_round 1: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,076 | server.py:192 | evaluate_round 1 received 3 results and 0 failures
+WARNING flwr 2024-07-11 12:45:46,077 | qfedavg.py:256 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2024-07-11 12:45:46,078 | server.py:227 | fit_round 2: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,111 | server.py:241 | fit_round 2 received 3 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -50,11 +37,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,093 | server.py:125 | fit progress: (3, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.2644099000000004)
-DEBUG flwr 2023-09-18 18:00:07,093 | server.py:173 | evaluate_round 3: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,115 | server.py:187 | evaluate_round 3 received 4 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,116 | server.py:223 | fit_round 4: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,144 | server.py:237 | fit_round 4 received 4 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,130 | server.py:131 | fit progress: (2, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.38839749999999995)
+DEBUG flwr 2024-07-11 12:45:46,131 | server.py:178 | evaluate_round 2: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,153 | server.py:192 | evaluate_round 2 received 3 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,155 | server.py:227 | fit_round 3: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,191 | server.py:241 | fit_round 3 received 3 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -63,11 +50,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,163 | server.py:125 | fit progress: (4, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.33411480000000005)
-DEBUG flwr 2023-09-18 18:00:07,163 | server.py:173 | evaluate_round 4: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,183 | server.py:187 | evaluate_round 4 received 4 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,185 | server.py:223 | fit_round 5: strategy sampled 4 clients (out of 4)
-DEBUG flwr 2023-09-18 18:00:07,211 | server.py:237 | fit_round 5 received 4 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,212 | server.py:131 | fit progress: (3, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.4703868999999994)
+DEBUG flwr 2024-07-11 12:45:46,212 | server.py:178 | evaluate_round 3: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,239 | server.py:192 | evaluate_round 3 received 3 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,240 | server.py:227 | fit_round 4: strategy sampled 3 clients (out of 3)
+DEBUG flwr 2024-07-11 12:45:46,269 | server.py:241 | fit_round 4 received 3 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -76,11 +63,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,229 | server.py:125 | fit progress: (5, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.40127550000000056)
-DEBUG flwr 2023-09-18 18:00:07,230 | server.py:173 | evaluate_round 5: strategy sampled 5 clients (out of 5)
-DEBUG flwr 2023-09-18 18:00:07,255 | server.py:187 | evaluate_round 5 received 5 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,257 | server.py:223 | fit_round 6: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,294 | server.py:237 | fit_round 6 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,299 | server.py:131 | fit progress: (4, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.5574811000000004)
+DEBUG flwr 2024-07-11 12:45:46,300 | server.py:178 | evaluate_round 4: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-11 12:45:46,328 | server.py:192 | evaluate_round 4 received 4 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,330 | server.py:227 | fit_round 5: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-11 12:45:46,367 | server.py:241 | fit_round 5 received 4 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -89,11 +76,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,317 | server.py:125 | fit progress: (6, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.4880078000000001)
-DEBUG flwr 2023-09-18 18:00:07,317 | server.py:173 | evaluate_round 6: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,353 | server.py:187 | evaluate_round 6 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,354 | server.py:223 | fit_round 7: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,389 | server.py:237 | fit_round 7 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,393 | server.py:131 | fit progress: (5, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.6519818999999991)
+DEBUG flwr 2024-07-11 12:45:46,394 | server.py:178 | evaluate_round 5: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-11 12:45:46,414 | server.py:192 | evaluate_round 5 received 4 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,416 | server.py:227 | fit_round 6: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-11 12:45:46,452 | server.py:241 | fit_round 6 received 4 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -102,11 +89,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,412 | server.py:125 | fit progress: (7, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.5831945000000012)
-DEBUG flwr 2023-09-18 18:00:07,412 | server.py:173 | evaluate_round 7: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,443 | server.py:187 | evaluate_round 7 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,444 | server.py:223 | fit_round 8: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,482 | server.py:237 | fit_round 8 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,476 | server.py:131 | fit progress: (6, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.7345811999999992)
+DEBUG flwr 2024-07-11 12:45:46,477 | server.py:178 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-11 12:45:46,505 | server.py:192 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,507 | server.py:227 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-11 12:45:46,556 | server.py:241 | fit_round 7 received 5 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -115,11 +102,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,510 | server.py:125 | fit progress: (8, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.6815730999999996)
-DEBUG flwr 2023-09-18 18:00:07,510 | server.py:173 | evaluate_round 8: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,548 | server.py:187 | evaluate_round 8 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,551 | server.py:223 | fit_round 9: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,592 | server.py:237 | fit_round 9 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,582 | server.py:131 | fit progress: (7, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.8398687000000002)
+DEBUG flwr 2024-07-11 12:45:46,583 | server.py:178 | evaluate_round 7: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,620 | server.py:192 | evaluate_round 7 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,622 | server.py:227 | fit_round 8: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,676 | server.py:241 | fit_round 8 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -128,11 +115,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,622 | server.py:125 | fit progress: (9, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.7933915000000002)
-DEBUG flwr 2023-09-18 18:00:07,623 | server.py:173 | evaluate_round 9: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,661 | server.py:187 | evaluate_round 9 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,663 | server.py:223 | fit_round 10: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,699 | server.py:237 | fit_round 10 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,700 | server.py:131 | fit progress: (8, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.9581631999999995)
+DEBUG flwr 2024-07-11 12:45:46,700 | server.py:178 | evaluate_round 8: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,732 | server.py:192 | evaluate_round 8 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,734 | server.py:227 | fit_round 9: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,793 | server.py:241 | fit_round 9 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -141,11 +128,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,720 | server.py:125 | fit progress: (10, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.8918885000000003)
-DEBUG flwr 2023-09-18 18:00:07,720 | server.py:173 | evaluate_round 10: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,750 | server.py:187 | evaluate_round 10 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,753 | server.py:223 | fit_round 11: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,789 | server.py:237 | fit_round 11 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,817 | server.py:131 | fit progress: (9, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.0747340999999988)
+DEBUG flwr 2024-07-11 12:45:46,817 | server.py:178 | evaluate_round 9: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,848 | server.py:192 | evaluate_round 9 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,849 | server.py:227 | fit_round 10: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,904 | server.py:241 | fit_round 10 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -154,11 +141,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,810 | server.py:125 | fit progress: (11, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 0.9814195000000012)
-DEBUG flwr 2023-09-18 18:00:07,810 | server.py:173 | evaluate_round 11: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,843 | server.py:187 | evaluate_round 11 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,845 | server.py:223 | fit_round 12: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,883 | server.py:237 | fit_round 12 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:46,927 | server.py:131 | fit progress: (10, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.1858833999999998)
+DEBUG flwr 2024-07-11 12:45:46,928 | server.py:178 | evaluate_round 10: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:46,959 | server.py:192 | evaluate_round 10 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:46,960 | server.py:227 | fit_round 11: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,009 | server.py:241 | fit_round 11 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -167,11 +154,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,904 | server.py:125 | fit progress: (12, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.0754990000000006)
-DEBUG flwr 2023-09-18 18:00:07,905 | server.py:173 | evaluate_round 12: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,934 | server.py:187 | evaluate_round 12 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:07,936 | server.py:223 | fit_round 13: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:07,971 | server.py:237 | fit_round 13 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,032 | server.py:131 | fit progress: (11, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.2896660000000004)
+DEBUG flwr 2024-07-11 12:45:47,032 | server.py:178 | evaluate_round 11: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,062 | server.py:192 | evaluate_round 11 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,064 | server.py:227 | fit_round 12: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,101 | server.py:241 | fit_round 12 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -180,11 +167,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:07,994 | server.py:125 | fit progress: (13, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.1655312000000002)
-DEBUG flwr 2023-09-18 18:00:07,994 | server.py:173 | evaluate_round 13: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,031 | server.py:187 | evaluate_round 13 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,033 | server.py:223 | fit_round 14: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,070 | server.py:237 | fit_round 14 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,125 | server.py:131 | fit progress: (12, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.3839349999999992)
+DEBUG flwr 2024-07-11 12:45:47,126 | server.py:178 | evaluate_round 12: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,154 | server.py:192 | evaluate_round 12 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,156 | server.py:227 | fit_round 13: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,199 | server.py:241 | fit_round 13 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -193,11 +180,24 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,092 | server.py:125 | fit progress: (14, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.2635629999999995)
-DEBUG flwr 2023-09-18 18:00:08,093 | server.py:173 | evaluate_round 14: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,121 | server.py:187 | evaluate_round 14 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,123 | server.py:223 | fit_round 15: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,161 | server.py:237 | fit_round 15 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,221 | server.py:131 | fit progress: (13, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.4793892)
+DEBUG flwr 2024-07-11 12:45:47,221 | server.py:178 | evaluate_round 13: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,250 | server.py:192 | evaluate_round 13 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,251 | server.py:227 | fit_round 14: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,291 | server.py:241 | fit_round 14 received 6 results and 0 failures
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-11 12:45:47,312 | server.py:131 | fit progress: (14, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.5713676000000003)
+DEBUG flwr 2024-07-11 12:45:47,313 | server.py:178 | evaluate_round 14: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,338 | server.py:192 | evaluate_round 14 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,339 | server.py:227 | fit_round 15: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,375 | server.py:241 | fit_round 15 received 6 results and 0 failures
 >>>>>>>>>>>>> setting initial parameters
 [[0. 0. 0. 0. 0. 0. 0. 0.]
  [0. 0. 0. 0. 0. 0. 0. 0.]]
@@ -213,110 +213,114 @@ DEBUG flwr 2023-09-18 18:00:08,161 | server.py:237 | fit_round 15 received 6 res
          0.00232867, -0.00152005, -0.00116508],
        [-0.06126917,  0.02656937,  0.02435769,  0.00838132,  0.00100725,
          0.00232867, -0.00152005, -0.00116508]]), array([0.01974469, 0.01974469])]
-[array([[-0.11915464,  0.05307442,  0.048076  ,  0.01695871,  0.00261269,
-         0.00654302, -0.00473743,  0.00054766],
-       [-0.11915464,  0.05307442,  0.048076  ,  0.01695871,  0.00261269,
-         0.00654302, -0.00473743,  0.00054766]]), array([0.02990337, 0.02990337])]
-[array([[-0.11915464,  0.05307442,  0.048076  ,  0.01695871,  0.00261269,
-         0.00654302, -0.00473743,  0.00054766],
-       [-0.11915464,  0.05307442,  0.048076  ,  0.01695871,  0.00261269,
-         0.00654302, -0.00473743,  0.00054766]]), array([0.02990337, 0.02990337])]
-[array([[-0.17853013,  0.08027985,  0.07240914,  0.02577487,  0.00421566,
-         0.01088352, -0.00801621,  0.00227794],
-       [-0.17853013,  0.08027985,  0.07240914,  0.02577487,  0.00421566,
-         0.01088352, -0.00801621,  0.00227794]]), array([0.04031773, 0.04031773])]
-[array([[-0.17853013,  0.08027985,  0.07240914,  0.02577487,  0.00421566,
-         0.01088352, -0.00801621,  0.00227794],
-       [-0.17853013,  0.08027985,  0.07240914,  0.02577487,  0.00421566,
-         0.01088352, -0.00801621,  0.00227794]]), array([0.04031773, 0.04031773])]
-[array([[-0.23953481,  0.1081869 ,  0.09739709,  0.03479784,  0.00586004,
-         0.01535167, -0.01140432,  0.00402179],
-       [-0.23953481,  0.1081869 ,  0.09739709,  0.03479784,  0.00586004,
-         0.01535167, -0.01140432,  0.00402179]]), array([0.05115717, 0.05115717])]
-[array([[-0.23953481,  0.1081869 ,  0.09739709,  0.03479784,  0.00586004,
-         0.01535167, -0.01140432,  0.00402179],
-       [-0.23953481,  0.1081869 ,  0.09739709,  0.03479784,  0.00586004,
-         0.01535167, -0.01140432,  0.00402179]]), array([0.05115717, 0.05115717])]
-[array([[-0.30238709,  0.13689642,  0.12313786,  0.04404955,  0.00752162,
-         0.01998334, -0.01488162,  0.00578965],
-       [-0.30238709,  0.13689642,  0.12313786,  0.04404955,  0.00752162,
-         0.01998334, -0.01488162,  0.00578965]]), array([0.06249992, 0.06249992])]
-[array([[-0.30238709,  0.13689642,  0.12313786,  0.04404955,  0.00752162,
-         0.01998334, -0.01488162,  0.00578965],
-       [-0.30238709,  0.13689642,  0.12313786,  0.04404955,  0.00752162,
-         0.01998334, -0.01488162,  0.00578965]]), array([0.06249992, 0.06249992])]
-[array([[-0.36732196,  0.16716433,  0.15047287,  0.05515994,  0.01121244,
-         0.02419757, -0.01700148,  0.00671572],
-       [-0.36732196,  0.16716433,  0.15047287,  0.05515994,  0.01121244,
-         0.02419757, -0.01700148,  0.00671572]]), array([0.06930697, 0.06930697])]
-[array([[-0.36732196,  0.16716433,  0.15047287,  0.05515994,  0.01121244,
-         0.02419757, -0.01700148,  0.00671572],
-       [-0.36732196,  0.16716433,  0.15047287,  0.05515994,  0.01121244,
-         0.02419757, -0.01700148,  0.00671572]]), array([0.06930697, 0.06930697])]
-[array([[-0.43436409,  0.19848224,  0.17868976,  0.06662486,  0.01505717,
-         0.02854189, -0.01922166,  0.00768774],
-       [-0.43436409,  0.19848224,  0.17868976,  0.06662486,  0.01505717,
-         0.02854189, -0.01922166,  0.00768774]]), array([0.0762362, 0.0762362])]
-[array([[-0.43436409,  0.19848224,  0.17868976,  0.06662486,  0.01505717,
-         0.02854189, -0.01922166,  0.00768774],
-       [-0.43436409,  0.19848224,  0.17868976,  0.06662486,  0.01505717,
-         0.02854189, -0.01922166,  0.00768774]]), array([0.0762362, 0.0762362])]
-[array([[-0.50368099,  0.23090173,  0.20787079,  0.07851209,  0.01903698,
-         0.03303663, -0.02149797,  0.00870299],
-       [-0.50368099,  0.23090173,  0.20787079,  0.07851209,  0.01903698,
-         0.03303663, -0.02149797,  0.00870299]]), array([0.08325003, 0.08325003])]
-[array([[-0.50368099,  0.23090173,  0.20787079,  0.07851209,  0.01903698,
-         0.03303663, -0.02149797,  0.00870299],
-       [-0.50368099,  0.23090173,  0.20787079,  0.07851209,  0.01903698,
-         0.03303663, -0.02149797,  0.00870299]]), array([0.08325003, 0.08325003])]
-[array([[-0.57549065,  0.2645088 ,  0.23813789,  0.09085926,  0.0231673 ,
-         0.03769714, -0.02383205,  0.00978031],
-       [-0.57549065,  0.2645088 ,  0.23813789,  0.09085926,  0.0231673 ,
-         0.03769714, -0.02383205,  0.00978031]]), array([0.09031916, 0.09031916])]
-[array([[-0.57549065,  0.2645088 ,  0.23813789,  0.09085926,  0.0231673 ,
-         0.03769714, -0.02383205,  0.00978031],
-       [-0.57549065,  0.2645088 ,  0.23813789,  0.09085926,  0.0231673 ,
-         0.03769714, -0.02383205,  0.00978031]]), array([0.09031916, 0.09031916])]
-[array([[-0.65005419,  0.29940983,  0.26962208,  0.10369586,  0.02747129,
-         0.0425274 , -0.02623515,  0.01094439],
-       [-0.65005419,  0.29940983,  0.26962208,  0.10369586,  0.02747129,
-         0.0425274 , -0.02623515,  0.01094439]]), array([0.09745783, 0.09745783])]
-[array([[-0.65005419,  0.29940983,  0.26962208,  0.10369586,  0.02747129,
-         0.0425274 , -0.02623515,  0.01094439],
-       [-0.65005419,  0.29940983,  0.26962208,  0.10369586,  0.02747129,
-         0.0425274 , -0.02623515,  0.01094439]]), array([0.09745783, 0.09745783])]
-[array([[-0.72765967,  0.33572323,  0.30240726,  0.11707427,  0.03196679,
-         0.04754942, -0.02873971,  0.01221136],
-       [-0.72765967,  0.33572323,  0.30240726,  0.11707427,  0.03196679,
-         0.04754942, -0.02873971,  0.01221136]]), array([0.10474433, 0.10474433])]
-[array([[-0.72765967,  0.33572323,  0.30240726,  0.11707427,  0.03196679,
-         0.04754942, -0.02873971,  0.01221136],
-       [-0.72765967,  0.33572323,  0.30240726,  0.11707427,  0.03196679,
-         0.04754942, -0.02873971,  0.01221136]]), array([0.10474433, 0.10474433])]
-[array([[-0.80838612,  0.37340426,  0.33645017,  0.13099808,  0.03660822,
-         0.05285393, -0.03132557,  0.013578  ],
-       [-0.80838612,  0.37340426,  0.33645017,  0.13099808,  0.03660822,
-         0.05285393, -0.03132557,  0.013578  ]]), array([0.11234093, 0.11234093])]
-[array([[-0.80838612,  0.37340426,  0.33645017,  0.13099808,  0.03660822,
-         0.05285393, -0.03132557,  0.013578  ],
-       [-0.80838612,  0.37340426,  0.33645017,  0.13099808,  0.03660822,
-         0.05285393, -0.03132557,  0.013578  ]]), array([0.11234093, 0.11234093])]
-[array([[-0.89305925,  0.41299464,  0.3723723 ,  0.14574758,  0.04171181,
-         0.05849785, -0.0339245 ,  0.01496661],
-       [-0.89305925,  0.41299464,  0.3723723 ,  0.14574758,  0.04171181,
-         0.05849785, -0.0339245 ,  0.01496661]]), array([0.11962141, 0.11962141])]
-[array([[-0.89305925,  0.41299464,  0.3723723 ,  0.14574758,  0.04171181,
-         0.05849785, -0.0339245 ,  0.01496661],
-       [-0.89305925,  0.41299464,  0.3723723 ,  0.14574758,  0.04171181,
-         0.05849785, -0.0339245 ,  0.01496661]]), array([0.11962141, 0.11962141])]
-[array([[-0.98180975,  0.4544771 ,  0.40985064,  0.16104751,  0.04686271,
-         0.06429708, -0.03677027,  0.0163091 ],
-       [-0.98180975,  0.4544771 ,  0.40985064,  0.16104751,  0.04686271,
-         0.06429708, -0.03677027,  0.0163091 ]]), array([0.12781282, 0.12781282])]
-[array([[-0.98180975,  0.4544771 ,  0.40985064,  0.16104751,  0.04686271,
-         0.06429708, -0.03677027,  0.0163091 ],
-       [-0.98180975,  0.4544771 ,  0.40985064,  0.16104751,  0.04686271,
-         0.06429708, -0.03677027,  0.0163091 ]]), array([0.12781282, 0.12781282])]D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+[array([[-0.11844246,  0.05316458,  0.04800444,  0.01536208, -0.00022919,
+         0.00674831, -0.00434726,  0.00026322],
+       [-0.11844246,  0.05316458,  0.04800444,  0.01536208, -0.00022919,
+         0.00674831, -0.00434726,  0.00026322]]), array([0.033504, 0.033504])]
+[array([[-0.11844246,  0.05316458,  0.04800444,  0.01536208, -0.00022919,
+         0.00674831, -0.00434726,  0.00026322],
+       [-0.11844246,  0.05316458,  0.04800444,  0.01536208, -0.00022919,
+         0.00674831, -0.00434726,  0.00026322]]), array([0.033504, 0.033504])]
+[array([[-0.17708558,  0.08045391,  0.07225456,  0.02254211, -0.00154469,
+         0.01132393, -0.00722342,  0.00169293],
+       [-0.17708558,  0.08045391,  0.07225456,  0.02254211, -0.00154469,
+         0.01132393, -0.00722342,  0.00169293]]), array([0.04761903, 0.04761903])]
+[array([[-0.17708558,  0.08045391,  0.07225456,  0.02254211, -0.00154469,
+         0.01132393, -0.00722342,  0.00169293],
+       [-0.17708558,  0.08045391,  0.07225456,  0.02254211, -0.00154469,
+         0.01132393, -0.00722342,  0.00169293]]), array([0.04761903, 0.04761903])]
+[array([[-0.23735272,  0.10847872,  0.0971748 ,  0.02990328, -0.0029312 ,
+         0.01604675, -0.01016873,  0.00313511],
+       [-0.23735272,  0.10847872,  0.0971748 ,  0.02990328, -0.0029312 ,
+         0.01604675, -0.01016873,  0.00313511]]), array([0.06218455, 0.06218455])]
+[array([[-0.23735272,  0.10847872,  0.0971748 ,  0.02990328, -0.0029312 ,
+         0.01604675, -0.01016873,  0.00313511],
+       [-0.23735272,  0.10847872,  0.0971748 ,  0.02990328, -0.0029312 ,
+         0.01604675, -0.01016873,  0.00313511]]), array([0.06218455, 0.06218455])]
+[array([[-0.30022166,  0.13715755,  0.1228916 ,  0.03932579, -0.00095352,
+         0.02065214, -0.01368389,  0.00493344],
+       [-0.30022166,  0.13715755,  0.1228916 ,  0.03932579, -0.00095352,
+         0.02065214, -0.01368389,  0.00493344]]), array([0.07311381, 0.07311381])]
+[array([[-0.30022166,  0.13715755,  0.1228916 ,  0.03932579, -0.00095352,
+         0.02065214, -0.01368389,  0.00493344],
+       [-0.30022166,  0.13715755,  0.1228916 ,  0.03932579, -0.00095352,
+         0.02065214, -0.01368389,  0.00493344]]), array([0.07311381, 0.07311381])]
+[array([[-0.36500897,  0.16671469,  0.1493932 ,  0.04902836,  0.00108317,
+         0.0254165 , -0.01729478,  0.00677311],
+       [-0.36500897,  0.16671469,  0.1493932 ,  0.04902836,  0.00108317,
+         0.0254165 , -0.01729478,  0.00677311]]), array([0.08433356, 0.08433356])]
+[array([[-0.36500897,  0.16671469,  0.1493932 ,  0.04902836,  0.00108317,
+         0.0254165 , -0.01729478,  0.00677311],
+       [-0.36500897,  0.16671469,  0.1493932 ,  0.04902836,  0.00108317,
+         0.0254165 , -0.01729478,  0.00677311]]), array([0.08433356, 0.08433356])]
+[array([[-0.43253744,  0.1977654 ,  0.17734139,  0.05987085,  0.00498635,
+         0.0294174 , -0.0199283 ,  0.00778502],
+       [-0.43253744,  0.1977654 ,  0.17734139,  0.05987085,  0.00498635,
+         0.0294174 , -0.0199283 ,  0.00778502]]), array([0.0932293, 0.0932293])]
+[array([[-0.43253744,  0.1977654 ,  0.17734139,  0.05987085,  0.00498635,
+         0.0294174 , -0.0199283 ,  0.00778502],
+       [-0.43253744,  0.1977654 ,  0.17734139,  0.05987085,  0.00498635,
+         0.0294174 , -0.0199283 ,  0.00778502]]), array([0.0932293, 0.0932293])]
+[array([[-0.50176653,  0.23013429,  0.20651865,  0.0720348 ,  0.00941244,
+         0.03387115, -0.02215715,  0.00881044],
+       [-0.50176653,  0.23013429,  0.20651865,  0.0720348 ,  0.00941244,
+         0.03387115, -0.02215715,  0.00881044]]), array([0.0994185, 0.0994185])]
+[array([[-0.50176653,  0.23013429,  0.20651865,  0.0720348 ,  0.00941244,
+         0.03387115, -0.02215715,  0.00881044],
+       [-0.50176653,  0.23013429,  0.20651865,  0.0720348 ,  0.00941244,
+         0.03387115, -0.02215715,  0.00881044]]), array([0.0994185, 0.0994185])]
+[array([[-0.57347793,  0.26368688,  0.23678211,  0.08466403,  0.01400645,
+         0.0384809 , -0.02444469,  0.009899  ],
+       [-0.57347793,  0.26368688,  0.23678211,  0.08466403,  0.01400645,
+         0.0384809 , -0.02444469,  0.009899  ]]), array([0.10563406, 0.10563406])]
+[array([[-0.57347793,  0.26368688,  0.23678211,  0.08466403,  0.01400645,
+         0.0384809 , -0.02444469,  0.009899  ],
+       [-0.57347793,  0.26368688,  0.23678211,  0.08466403,  0.01400645,
+         0.0384809 , -0.02444469,  0.009899  ]]), array([0.10563406, 0.10563406])]
+[array([[-0.64793892,  0.29852361,  0.26826187,  0.09778874,  0.01878923,
+         0.04325217, -0.02680573,  0.01107892],
+       [-0.64793892,  0.29852361,  0.26826187,  0.09778874,  0.01878923,
+         0.04325217, -0.02680573,  0.01107892]]), array([0.11190817, 0.11190817])]
+[array([[-0.64793892,  0.29852361,  0.26826187,  0.09778874,  0.01878923,
+         0.04325217, -0.02680573,  0.01107892],
+       [-0.64793892,  0.29852361,  0.26826187,  0.09778874,  0.01878923,
+         0.04325217, -0.02680573,  0.01107892]]), array([0.11190817, 0.11190817])]
+[array([[-0.7254341 ,  0.33476478,  0.3010194 ,  0.1114804 ,  0.02378007,
+         0.04821949, -0.02926884,  0.01235617],
+       [-0.7254341 ,  0.33476478,  0.3010194 ,  0.1114804 ,  0.02378007,
+         0.04821949, -0.02926884,  0.01235617]]), array([0.11830502, 0.11830502])]
+[array([[-0.7254341 ,  0.33476478,  0.3010194 ,  0.1114804 ,  0.02378007,
+         0.04821949, -0.02926884,  0.01235617],
+       [-0.7254341 ,  0.33476478,  0.3010194 ,  0.1114804 ,  0.02378007,
+         0.04821949, -0.02926884,  0.01235617]]), array([0.11830502, 0.11830502])]
+[array([[-0.80618195,  0.37243562,  0.33514179,  0.1257544 ,  0.02898989,
+         0.05342582, -0.03182929,  0.01368506],
+       [-0.80618195,  0.37243562,  0.33514179,  0.1257544 ,  0.02898989,
+         0.05342582, -0.03182929,  0.01368506]]), array([0.12495311, 0.12495311])]
+[array([[-0.80618195,  0.37243562,  0.33514179,  0.1257544 ,  0.02898989,
+         0.05342582, -0.03182929,  0.01368506],
+       [-0.80618195,  0.37243562,  0.33514179,  0.1257544 ,  0.02898989,
+         0.05342582, -0.03182929,  0.01368506]]), array([0.12495311, 0.12495311])]
+[array([[-0.89053008,  0.41191814,  0.37085541,  0.14071968,  0.03453755,
+         0.05897635, -0.03449027,  0.01512843],
+       [-0.89053008,  0.41191814,  0.37085541,  0.14071968,  0.03453755,
+         0.05897635, -0.03449027,  0.01512843]]), array([0.13151609, 0.13151609])]
+[array([[-0.89053008,  0.41191814,  0.37085541,  0.14071968,  0.03453755,
+         0.05897635, -0.03449027,  0.01512843],
+       [-0.89053008,  0.41191814,  0.37085541,  0.14071968,  0.03453755,
+         0.05897635, -0.03449027,  0.01512843]]), array([0.13151609, 0.13151609])]
+[array([[-0.97917669,  0.4533831 ,  0.40833221,  0.15637625,  0.04026564,
+         0.06471164, -0.03729633,  0.01647457],
+       [-0.97917669,  0.4533831 ,  0.40833221,  0.15637625,  0.04026564,
+         0.06471164, -0.03729633,  0.01647457]]), array([0.13868392, 0.13868392])]
+[array([[-0.97917669,  0.4533831 ,  0.40833221,  0.15637625,  0.04026564,
+         0.06471164, -0.03729633,  0.01647457],
+       [-0.97917669,  0.4533831 ,  0.40833221,  0.15637625,  0.04026564,
+         0.06471164, -0.03729633,  0.01647457]]), array([0.13868392, 0.13868392])]
+[array([[-1.0724223 ,  0.4970713 ,  0.4477282 ,  0.17280885,  0.04625116,
+         0.07071719, -0.04026303,  0.01796008],
+       [-1.0724223 ,  0.4970713 ,  0.4477282 ,  0.17280885,  0.04625116,
+         0.07071719, -0.04026303,  0.01796008]]), array([0.14622919, 0.14622919])]D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
@@ -324,24 +328,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,183 | server.py:125 | fit progress: (15, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.3551523000000003)
-DEBUG flwr 2023-09-18 18:00:08,184 | server.py:173 | evaluate_round 15: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,212 | server.py:187 | evaluate_round 15 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,214 | server.py:223 | fit_round 16: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,255 | server.py:237 | fit_round 16 received 6 results and 0 failures
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
-  f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,276 | server.py:125 | fit progress: (16, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.4475779000000006)
-DEBUG flwr 2023-09-18 18:00:08,277 | server.py:173 | evaluate_round 16: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,319 | server.py:187 | evaluate_round 16 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,321 | server.py:223 | fit_round 17: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,362 | server.py:237 | fit_round 17 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,396 | server.py:131 | fit progress: (15, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.6548110999999999)
+DEBUG flwr 2024-07-11 12:45:47,397 | server.py:178 | evaluate_round 15: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,428 | server.py:192 | evaluate_round 15 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,429 | server.py:227 | fit_round 16: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,462 | server.py:241 | fit_round 16 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -350,11 +341,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,385 | server.py:125 | fit progress: (17, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.5562114999999999)
-DEBUG flwr 2023-09-18 18:00:08,386 | server.py:173 | evaluate_round 17: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,421 | server.py:187 | evaluate_round 17 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,423 | server.py:223 | fit_round 18: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,469 | server.py:237 | fit_round 18 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,483 | server.py:131 | fit progress: (16, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.7414179999999995)
+DEBUG flwr 2024-07-11 12:45:47,484 | server.py:178 | evaluate_round 16: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,512 | server.py:192 | evaluate_round 16 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,513 | server.py:227 | fit_round 17: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,547 | server.py:241 | fit_round 17 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -363,11 +354,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,491 | server.py:125 | fit progress: (18, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.6627291)
-DEBUG flwr 2023-09-18 18:00:08,492 | server.py:173 | evaluate_round 18: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,524 | server.py:187 | evaluate_round 18 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,526 | server.py:223 | fit_round 19: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,581 | server.py:237 | fit_round 19 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,569 | server.py:131 | fit progress: (17, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.8275115)
+DEBUG flwr 2024-07-11 12:45:47,569 | server.py:178 | evaluate_round 17: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,594 | server.py:192 | evaluate_round 17 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,595 | server.py:227 | fit_round 18: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,636 | server.py:241 | fit_round 18 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -376,11 +367,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,604 | server.py:125 | fit progress: (19, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.7748059999999999)
-DEBUG flwr 2023-09-18 18:00:08,604 | server.py:173 | evaluate_round 19: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,636 | server.py:187 | evaluate_round 19 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,637 | server.py:223 | fit_round 20: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,704 | server.py:237 | fit_round 20 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,657 | server.py:131 | fit progress: (18, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.9152918000000003)
+DEBUG flwr 2024-07-11 12:45:47,657 | server.py:178 | evaluate_round 18: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,689 | server.py:192 | evaluate_round 18 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,690 | server.py:227 | fit_round 19: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,729 | server.py:241 | fit_round 19 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -389,11 +380,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,727 | server.py:125 | fit progress: (20, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 1.8982221)
-DEBUG flwr 2023-09-18 18:00:08,727 | server.py:173 | evaluate_round 20: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,760 | server.py:187 | evaluate_round 20 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,761 | server.py:223 | fit_round 21: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,813 | server.py:237 | fit_round 21 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,751 | server.py:131 | fit progress: (19, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.009247799999999)
+DEBUG flwr 2024-07-11 12:45:47,752 | server.py:178 | evaluate_round 19: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,779 | server.py:192 | evaluate_round 19 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,781 | server.py:227 | fit_round 20: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,818 | server.py:241 | fit_round 20 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -402,11 +393,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,839 | server.py:125 | fit progress: (21, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.010271300000001)
-DEBUG flwr 2023-09-18 18:00:08,840 | server.py:173 | evaluate_round 21: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,874 | server.py:187 | evaluate_round 21 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,876 | server.py:223 | fit_round 22: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,922 | server.py:237 | fit_round 22 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,839 | server.py:131 | fit progress: (20, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.097614)
+DEBUG flwr 2024-07-11 12:45:47,839 | server.py:178 | evaluate_round 20: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,868 | server.py:192 | evaluate_round 20 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,870 | server.py:227 | fit_round 21: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,916 | server.py:241 | fit_round 21 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -415,11 +406,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:08,945 | server.py:125 | fit progress: (22, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.1170027000000005)
-DEBUG flwr 2023-09-18 18:00:08,946 | server.py:173 | evaluate_round 22: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:08,984 | server.py:187 | evaluate_round 22 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:08,985 | server.py:223 | fit_round 23: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,044 | server.py:237 | fit_round 23 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:47,937 | server.py:131 | fit progress: (21, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.195569599999999)
+DEBUG flwr 2024-07-11 12:45:47,938 | server.py:178 | evaluate_round 21: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:47,967 | server.py:192 | evaluate_round 21 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:47,969 | server.py:227 | fit_round 22: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,011 | server.py:241 | fit_round 22 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -428,11 +419,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,067 | server.py:125 | fit progress: (23, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.2381901000000006)
-DEBUG flwr 2023-09-18 18:00:09,067 | server.py:173 | evaluate_round 23: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,097 | server.py:187 | evaluate_round 23 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,098 | server.py:223 | fit_round 24: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,143 | server.py:237 | fit_round 24 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,032 | server.py:131 | fit progress: (22, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.2907352000000003)
+DEBUG flwr 2024-07-11 12:45:48,032 | server.py:178 | evaluate_round 22: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,061 | server.py:192 | evaluate_round 22 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,062 | server.py:227 | fit_round 23: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,098 | server.py:241 | fit_round 23 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -441,11 +432,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,168 | server.py:125 | fit progress: (24, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.3396345000000007)
-DEBUG flwr 2023-09-18 18:00:09,168 | server.py:173 | evaluate_round 24: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,198 | server.py:187 | evaluate_round 24 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,199 | server.py:223 | fit_round 25: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,240 | server.py:237 | fit_round 25 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,120 | server.py:131 | fit progress: (23, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.378019199999999)
+DEBUG flwr 2024-07-11 12:45:48,120 | server.py:178 | evaluate_round 23: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,146 | server.py:192 | evaluate_round 23 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,148 | server.py:227 | fit_round 24: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,183 | server.py:241 | fit_round 24 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -454,11 +445,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,262 | server.py:125 | fit progress: (25, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.4336558000000004)
-DEBUG flwr 2023-09-18 18:00:09,263 | server.py:173 | evaluate_round 25: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,294 | server.py:187 | evaluate_round 25 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,295 | server.py:223 | fit_round 26: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,338 | server.py:237 | fit_round 26 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,208 | server.py:131 | fit progress: (24, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.4663550999999995)
+DEBUG flwr 2024-07-11 12:45:48,209 | server.py:178 | evaluate_round 24: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,237 | server.py:192 | evaluate_round 24 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,238 | server.py:227 | fit_round 25: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,274 | server.py:241 | fit_round 25 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -467,11 +458,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,359 | server.py:125 | fit progress: (26, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.5304764000000013)
-DEBUG flwr 2023-09-18 18:00:09,359 | server.py:173 | evaluate_round 26: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,390 | server.py:187 | evaluate_round 26 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,392 | server.py:223 | fit_round 27: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,435 | server.py:237 | fit_round 27 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,296 | server.py:131 | fit progress: (25, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.5545323)
+DEBUG flwr 2024-07-11 12:45:48,296 | server.py:178 | evaluate_round 25: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,322 | server.py:192 | evaluate_round 25 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,323 | server.py:227 | fit_round 26: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,362 | server.py:241 | fit_round 26 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -480,11 +471,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,459 | server.py:125 | fit progress: (27, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.6302874000000003)
-DEBUG flwr 2023-09-18 18:00:09,459 | server.py:173 | evaluate_round 27: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,488 | server.py:187 | evaluate_round 27 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,490 | server.py:223 | fit_round 28: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,530 | server.py:237 | fit_round 28 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,383 | server.py:131 | fit progress: (26, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.6414652999999984)
+DEBUG flwr 2024-07-11 12:45:48,383 | server.py:178 | evaluate_round 26: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,410 | server.py:192 | evaluate_round 26 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,412 | server.py:227 | fit_round 27: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,453 | server.py:241 | fit_round 27 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -493,11 +484,11 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,553 | server.py:125 | fit progress: (28, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.7241122000000004)
-DEBUG flwr 2023-09-18 18:00:09,553 | server.py:173 | evaluate_round 28: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,582 | server.py:187 | evaluate_round 28 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,583 | server.py:223 | fit_round 29: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,626 | server.py:237 | fit_round 29 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,474 | server.py:131 | fit progress: (27, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.731792999999998)
+DEBUG flwr 2024-07-11 12:45:48,474 | server.py:178 | evaluate_round 27: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,501 | server.py:192 | evaluate_round 27 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,502 | server.py:227 | fit_round 28: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,534 | server.py:241 | fit_round 28 received 6 results and 0 failures
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
@@ -506,132 +497,145 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,651 | server.py:125 | fit progress: (29, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.8224227000000006)
-DEBUG flwr 2023-09-18 18:00:09,651 | server.py:173 | evaluate_round 29: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,681 | server.py:187 | evaluate_round 29 received 6 results and 0 failures
-DEBUG flwr 2023-09-18 18:00:09,682 | server.py:223 | fit_round 30: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,723 | server.py:237 | fit_round 30 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,556 | server.py:131 | fit progress: (28, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.8149278000000013)
+DEBUG flwr 2024-07-11 12:45:48,557 | server.py:178 | evaluate_round 28: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,584 | server.py:192 | evaluate_round 28 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,586 | server.py:227 | fit_round 29: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,623 | server.py:241 | fit_round 29 received 6 results and 0 failures
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-11 12:45:48,644 | server.py:131 | fit progress: (29, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.9020929000000013)
+DEBUG flwr 2024-07-11 12:45:48,644 | server.py:178 | evaluate_round 29: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,673 | server.py:192 | evaluate_round 29 received 6 results and 0 failures
+DEBUG flwr 2024-07-11 12:45:48,675 | server.py:227 | fit_round 30: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,714 | server.py:241 | fit_round 30 received 6 results and 0 failures
 
-[array([[-1.07521941,  0.4982431 ,  0.44927359,  0.1771229 ,  0.05226653,
-         0.07037082, -0.03980302,  0.01781948],
-       [-1.07521941,  0.4982431 ,  0.44927359,  0.1771229 ,  0.05226653,
-         0.07037082, -0.03980302,  0.01781948]]), array([0.13640567, 0.13640567])]
-[array([[-1.07521941,  0.4982431 ,  0.44927359,  0.1771229 ,  0.05226653,
-         0.07037082, -0.03980302,  0.01781948],
-       [-1.07521941,  0.4982431 ,  0.44927359,  0.1771229 ,  0.05226653,
-         0.07037082, -0.03980302,  0.01781948]]), array([0.13640567, 0.13640567])]
-[array([[-1.17361704,  0.54434079,  0.49077078,  0.19407909,  0.05799287,
-         0.07677283, -0.04303635,  0.01939632],
-       [-1.17361704,  0.54434079,  0.49077078,  0.19407909,  0.05799287,
-         0.07677283, -0.04303635,  0.01939632]]), array([0.14548474, 0.14548474])]
-[array([[-1.17361704,  0.54434079,  0.49077078,  0.19407909,  0.05799287,
-         0.07677283, -0.04303635,  0.01939632],
-       [-1.17361704,  0.54434079,  0.49077078,  0.19407909,  0.05799287,
-         0.07677283, -0.04303635,  0.01939632]]), array([0.14548474, 0.14548474])]
-[array([[-1.27730223,  0.59290709,  0.53450161,  0.21196994,  0.06405426,
-         0.08351551, -0.04638132,  0.02107625],
-       [-1.27730223,  0.59290709,  0.53450161,  0.21196994,  0.06405426,
-         0.08351551, -0.04638132,  0.02107625]]), array([0.15490494, 0.15490494])]
-[array([[-1.27730223,  0.59290709,  0.53450161,  0.21196994,  0.06405426,
-         0.08351551, -0.04638132,  0.02107625],
-       [-1.27730223,  0.59290709,  0.53450161,  0.21196994,  0.06405426,
-         0.08351551, -0.04638132,  0.02107625]]), array([0.15490494, 0.15490494])]
-[array([[-1.38553415,  0.64357135,  0.58025395,  0.2305874 ,  0.07031269,
-         0.09045921, -0.04996521,  0.02272854],
-       [-1.38553415,  0.64357135,  0.58025395,  0.2305874 ,  0.07031269,
-         0.09045921, -0.04996521,  0.02272854]]), array([0.16502235, 0.16502235])]
-[array([[-1.38553415,  0.64357135,  0.58025395,  0.2305874 ,  0.07031269,
-         0.09045921, -0.04996521,  0.02272854],
-       [-1.38553415,  0.64357135,  0.58025395,  0.2305874 ,  0.07031269,
-         0.09045921, -0.04996521,  0.02272854]]), array([0.16502235, 0.16502235])]
-[array([[-1.49871495,  0.69612057,  0.62765125,  0.24977997,  0.076799  ,
-         0.09751256, -0.05389314,  0.02432601],
-       [-1.49871495,  0.69612057,  0.62765125,  0.24977997,  0.076799  ,
-         0.09751256, -0.05389314,  0.02432601]]), array([0.17723788, 0.17723788])]
-[array([[-1.49871495,  0.69612057,  0.62765125,  0.24977997,  0.076799  ,
-         0.09751256, -0.05389314,  0.02432601],
-       [-1.49871495,  0.69612057,  0.62765125,  0.24977997,  0.076799  ,
-         0.09751256, -0.05389314,  0.02432601]]), array([0.17723788, 0.17723788])]
-[array([[-1.61167204,  0.74896974,  0.67508207,  0.26939753,  0.08331995,
-         0.10496459, -0.05745696,  0.02623547],
-       [-1.61167204,  0.74896974,  0.67508207,  0.26939753,  0.08331995,
-         0.10496459, -0.05745696,  0.02623547]]), array([0.18742004, 0.18742004])]
-[array([[-1.61167204,  0.74896974,  0.67508207,  0.26939753,  0.08331995,
-         0.10496459, -0.05745696,  0.02623547],
-       [-1.61167204,  0.74896974,  0.67508207,  0.26939753,  0.08331995,
-         0.10496459, -0.05745696,  0.02623547]]), array([0.18742004, 0.18742004])]
-[array([[-1.7200713 ,  0.79951219,  0.72009377,  0.28739492,  0.0895926 ,
-         0.11162555, -0.06133958,  0.02754651],
-       [-1.7200713 ,  0.79951219,  0.72009377,  0.28739492,  0.0895926 ,
-         0.11162555, -0.06133958,  0.02754651]]), array([0.20002938, 0.20002938])]
-[array([[-1.7200713 ,  0.79951219,  0.72009377,  0.28739492,  0.0895926 ,
-         0.11162555, -0.06133958,  0.02754651],
-       [-1.7200713 ,  0.79951219,  0.72009377,  0.28739492,  0.0895926 ,
-         0.11162555, -0.06133958,  0.02754651]]), array([0.20002938, 0.20002938])]
-[array([[-1.81145457,  0.84257804,  0.75896481,  0.30351335,  0.0950006 ,
-         0.11770084, -0.064095  ,  0.02910347],
-       [-1.81145457,  0.84257804,  0.75896481,  0.30351335,  0.0950006 ,
-         0.11770084, -0.064095  ,  0.02910347]]), array([0.20703019, 0.20703019])]
-[array([[-1.81145457,  0.84257804,  0.75896481,  0.30351335,  0.0950006 ,
-         0.11770084, -0.064095  ,  0.02910347],
-       [-1.81145457,  0.84257804,  0.75896481,  0.30351335,  0.0950006 ,
-         0.11770084, -0.064095  ,  0.02910347]]), array([0.20703019, 0.20703019])]
-[array([[-1.88035093,  0.87464363,  0.78819913,  0.31544314,  0.09928949,
-         0.12199412, -0.06619977,  0.03027126],
-       [-1.88035093,  0.87464363,  0.78819913,  0.31544314,  0.09928949,
-         0.12199412, -0.06619977,  0.03027126]]), array([0.21355938, 0.21355938])]
-[array([[-1.88035093,  0.87464363,  0.78819913,  0.31544314,  0.09928949,
-         0.12199412, -0.06619977,  0.03027126],
-       [-1.88035093,  0.87464363,  0.78819913,  0.31544314,  0.09928949,
-         0.12199412, -0.06619977,  0.03027126]]), array([0.21355938, 0.21355938])]
-[array([[-1.92454385,  0.89559312,  0.80709715,  0.32332445,  0.10188473,
-         0.12518233, -0.06749213,  0.03107929],
-       [-1.92454385,  0.89559312,  0.80709715,  0.32332445,  0.10188473,
-         0.12518233, -0.06749213,  0.03107929]]), array([0.21608839, 0.21608839])]
-[array([[-1.92454385,  0.89559312,  0.80709715,  0.32332445,  0.10188473,
-         0.12518233, -0.06749213,  0.03107929],
-       [-1.92454385,  0.89559312,  0.80709715,  0.32332445,  0.10188473,
-         0.12518233, -0.06749213,  0.03107929]]), array([0.21608839, 0.21608839])]
-[array([[-1.95116146,  0.90823087,  0.81832923,  0.3281285 ,  0.10336194,
-         0.12702967, -0.06827525,  0.03155559],
-       [-1.95116146,  0.90823087,  0.81832923,  0.3281285 ,  0.10336194,
-         0.12702967, -0.06827525,  0.03155559]]), array([0.21788908, 0.21788908])]
-[array([[-1.95116146,  0.90823087,  0.81832923,  0.3281285 ,  0.10336194,
-         0.12702967, -0.06827525,  0.03155559],
-       [-1.95116146,  0.90823087,  0.81832923,  0.3281285 ,  0.10336194,
-         0.12702967, -0.06827525,  0.03155559]]), array([0.21788908, 0.21788908])]
-[array([[-1.96658123,  0.91554523,  0.82484219,  0.3309031 ,  0.10422035,
-         0.12809885, -0.06872966,  0.03184383],
-       [-1.96658123,  0.91554523,  0.82484219,  0.3309031 ,  0.10422035,
-         0.12809885, -0.06872966,  0.03184383]]), array([0.21894832, 0.21894832])]
-[array([[-1.96658123,  0.91554523,  0.82484219,  0.3309031 ,  0.10422035,
-         0.12809885, -0.06872966,  0.03184383],
-       [-1.96658123,  0.91554523,  0.82484219,  0.3309031 ,  0.10422035,
-         0.12809885, -0.06872966,  0.03184383]]), array([0.21894832, 0.21894832])]
-[array([[-1.97542668,  0.9197515 ,  0.82858636,  0.33248724,  0.10470818,
-         0.12871482, -0.0689941 ,  0.03201266],
-       [-1.97542668,  0.9197515 ,  0.82858636,  0.33248724,  0.10470818,
-         0.12871482, -0.0689941 ,  0.03201266]]), array([0.21954657, 0.21954657])]
-[array([[-1.97542668,  0.9197515 ,  0.82858636,  0.33248724,  0.10470818,
-         0.12871482, -0.0689941 ,  0.03201266],
-       [-1.97542668,  0.9197515 ,  0.82858636,  0.33248724,  0.10470818,
-         0.12871482, -0.0689941 ,  0.03201266]]), array([0.21954657, 0.21954657])]
-[array([[-1.98049469,  0.92216169,  0.83073517,  0.33339249,  0.10499046,
-         0.1290647 , -0.06913989,  0.03211383],
-       [-1.98049469,  0.92216169,  0.83073517,  0.33339249,  0.10499046,
-         0.1290647 , -0.06913989,  0.03211383]]), array([0.21988098, 0.21988098])]
-[array([[-1.98049469,  0.92216169,  0.83073517,  0.33339249,  0.10499046,
-         0.1290647 , -0.06913989,  0.03211383],
-       [-1.98049469,  0.92216169,  0.83073517,  0.33339249,  0.10499046,
-         0.1290647 , -0.06913989,  0.03211383]]), array([0.21988098, 0.21988098])]
-[array([[-1.98336686,  0.92352932,  0.83195469,  0.33390769,  0.10515416,
-         0.12926346, -0.06922872,  0.03217189],
-       [-1.98336686,  0.92352932,  0.83195469,  0.33390769,  0.10515416,
-         0.12926346, -0.06922872,  0.03217189]]), array([0.22006894, 0.22006894])]
-[array([[-1.98336686,  0.92352932,  0.83195469,  0.33390769,  0.10515416,
-         0.12926346, -0.06922872,  0.03217189],
-       [-1.98336686,  0.92352932,  0.83195469,  0.33390769,  0.10515416,
-         0.12926346, -0.06922872,  0.03217189]]), array([0.22006894, 0.22006894])]D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+[array([[-1.0724223 ,  0.4970713 ,  0.4477282 ,  0.17280885,  0.04625116,
+         0.07071719, -0.04026303,  0.01796008],
+       [-1.0724223 ,  0.4970713 ,  0.4477282 ,  0.17280885,  0.04625116,
+         0.07071719, -0.04026303,  0.01796008]]), array([0.14622919, 0.14622919])]
+[array([[-1.17065391,  0.54307706,  0.48919252,  0.19015503,  0.0525961 ,
+         0.07705203, -0.04342686,  0.01951302],
+       [-1.17065391,  0.54307706,  0.48919252,  0.19015503,  0.0525961 ,
+         0.07705203, -0.04342686,  0.01951302]]), array([0.15420051, 0.15420051])]
+[array([[-1.17065391,  0.54307706,  0.48919252,  0.19015503,  0.0525961 ,
+         0.07705203, -0.04342686,  0.01951302],
+       [-1.17065391,  0.54307706,  0.48919252,  0.19015503,  0.0525961 ,
+         0.07705203, -0.04342686,  0.01951302]]), array([0.15420051, 0.15420051])]
+[array([[-1.27415027,  0.59154229,  0.53288558,  0.20843645,  0.05929748,
+         0.0837241 , -0.04670829,  0.02117173],
+       [-1.27415027,  0.59154229,  0.53288558,  0.20843645,  0.05929748,
+         0.0837241 , -0.04670829,  0.02117173]]), array([0.16248643, 0.16248643])]
+[array([[-1.27415027,  0.59154229,  0.53288558,  0.20843645,  0.05929748,
+         0.0837241 , -0.04670829,  0.02117173],
+       [-1.27415027,  0.59154229,  0.53288558,  0.20843645,  0.05929748,
+         0.0837241 , -0.04670829,  0.02117173]]), array([0.16248643, 0.16248643])]
+[array([[-1.38232307,  0.64211422,  0.57851189,  0.22754909,  0.06625633,
+         0.09061881, -0.05017287,  0.02276584],
+       [-1.38232307,  0.64211422,  0.57851189,  0.22754909,  0.06625633,
+         0.09061881, -0.05017287,  0.02276584]]), array([0.17149132, 0.17149132])]
+[array([[-1.38232307,  0.64211422,  0.57851189,  0.22754909,  0.06625633,
+         0.09061881, -0.05017287,  0.02276584],
+       [-1.38232307,  0.64211422,  0.57851189,  0.22754909,  0.06625633,
+         0.09061881, -0.05017287,  0.02276584]]), array([0.17149132, 0.17149132])]
+[array([[-1.49544706,  0.69460739,  0.62591688,  0.24717044,  0.07344781,
+         0.09760269, -0.05407956,  0.02432585],
+       [-1.49544706,  0.69460739,  0.62591688,  0.24717044,  0.07344781,
+         0.09760269, -0.05407956,  0.02432585]]), array([0.182589, 0.182589])]
+[array([[-1.49544706,  0.69460739,  0.62591688,  0.24717044,  0.07344781,
+         0.09760269, -0.05407956,  0.02432585],
+       [-1.49544706,  0.69460739,  0.62591688,  0.24717044,  0.07344781,
+         0.09760269, -0.05407956,  0.02432585]]), array([0.182589, 0.182589])]
+[array([[-1.608418  ,  0.74749341,  0.67348304,  0.26716804,  0.08073244,
+         0.10499456, -0.05758951,  0.02622887],
+       [-1.608418  ,  0.74749341,  0.67348304,  0.26716804,  0.08073244,
+         0.10499456, -0.05758951,  0.02622887]]), array([0.19145094, 0.19145094])]
+[array([[-1.608418  ,  0.74749341,  0.67348304,  0.26716804,  0.08073244,
+         0.10499456, -0.05758951,  0.02622887],
+       [-1.608418  ,  0.74749341,  0.67348304,  0.26716804,  0.08073244,
+         0.10499456, -0.05758951,  0.02622887]]), array([0.19145094, 0.19145094])]
+[array([[-1.71712957,  0.7981451 ,  0.71867405,  0.2856862 ,  0.08770428,
+         0.11160053, -0.06141647,  0.02753052],
+       [-1.71712957,  0.7981451 ,  0.71867405,  0.2856862 ,  0.08770428,
+         0.11160053, -0.06141647,  0.02753052]]), array([0.20290211, 0.20290211])]
+[array([[-1.71712957,  0.7981451 ,  0.71867405,  0.2856862 ,  0.08770428,
+         0.11160053, -0.06141647,  0.02753052],
+       [-1.71712957,  0.7981451 ,  0.71867405,  0.2856862 ,  0.08770428,
+         0.11160053, -0.06141647,  0.02753052]]), array([0.20290211, 0.20290211])]
+[array([[-1.80908926,  0.84148209,  0.75784421,  0.3023053 ,  0.09372939,
+         0.1176577 , -0.0641357 ,  0.02908782],
+       [-1.80908926,  0.84148209,  0.75784421,  0.3023053 ,  0.09372939,
+         0.1176577 , -0.0641357 ,  0.02908782]]), array([0.20889704, 0.20889704])]
+[array([[-1.80908926,  0.84148209,  0.75784421,  0.3023053 ,  0.09372939,
+         0.1176577 , -0.0641357 ,  0.02908782],
+       [-1.80908926,  0.84148209,  0.75784421,  0.3023053 ,  0.09372939,
+         0.1176577 , -0.0641357 ,  0.02908782]]), array([0.20889704, 0.20889704])]
+[array([[-1.87868298,  0.87390587,  0.78742013,  0.31469996,  0.09850275,
+         0.12196399, -0.06620282,  0.0302346 ],
+       [-1.87868298,  0.87390587,  0.78742013,  0.31469996,  0.09850275,
+         0.12196399, -0.06620282,  0.0302346 ]]), array([0.21460807, 0.21460807])]
+[array([[-1.87868298,  0.87390587,  0.78742013,  0.31469996,  0.09850275,
+         0.12196399, -0.06620282,  0.0302346 ],
+       [-1.87868298,  0.87390587,  0.78742013,  0.31469996,  0.09850275,
+         0.12196399, -0.06620282,  0.0302346 ]]), array([0.21460807, 0.21460807])]
+[array([[-1.92352294,  0.89521997,  0.80647539,  0.32295988,  0.10133991,
+         0.12509957, -0.06747952,  0.03101031],
+       [-1.92352294,  0.89521997,  0.80647539,  0.32295988,  0.10133991,
+         0.12509957, -0.06747952,  0.03101031]]), array([0.21686823, 0.21686823])]
+[array([[-1.92352294,  0.89521997,  0.80647539,  0.32295988,  0.10133991,
+         0.12509957, -0.06747952,  0.03101031],
+       [-1.92352294,  0.89521997,  0.80647539,  0.32295988,  0.10133991,
+         0.12509957, -0.06747952,  0.03101031]]), array([0.21686823, 0.21686823])]
+[array([[-1.9505606 ,  0.90801043,  0.81796631,  0.32791588,  0.10304678,
+         0.12698   , -0.06826627,  0.03151488],
+       [-1.9505606 ,  0.90801043,  0.81796631,  0.32791588,  0.10304678,
+         0.12698   , -0.06826627,  0.03151488]]), array([0.21833742, 0.21833742])]
+[array([[-1.9505606 ,  0.90801043,  0.81796631,  0.32791588,  0.10304678,
+         0.12698   , -0.06826627,  0.03151488],
+       [-1.9505606 ,  0.90801043,  0.81796631,  0.32791588,  0.10304678,
+         0.12698   , -0.06826627,  0.03151488]]), array([0.21833742, 0.21833742])]
+[array([[-1.96623666,  0.91541819,  0.82463388,  0.33078151,  0.10404002,
+         0.12807023, -0.06872397,  0.03182057],
+       [-1.96623666,  0.91541819,  0.82463388,  0.33078151,  0.10404002,
+         0.12807023, -0.06872397,  0.03182057]]), array([0.21920467, 0.21920467])]
+[array([[-1.96623666,  0.91541819,  0.82463388,  0.33078151,  0.10404002,
+         0.12807023, -0.06872397,  0.03182057],
+       [-1.96623666,  0.91541819,  0.82463388,  0.33078151,  0.10404002,
+         0.12807023, -0.06872397,  0.03182057]]), array([0.21920467, 0.21920467])]
+[array([[-1.97522796,  0.91967799,  0.82846652,  0.33241792,  0.10460523,
+         0.12869835, -0.06899116,  0.03199914],
+       [-1.97522796,  0.91967799,  0.82846652,  0.33241792,  0.10460523,
+         0.12869835, -0.06899116,  0.03199914]]), array([0.21969293, 0.21969293])]
+[array([[-1.97522796,  0.91967799,  0.82846652,  0.33241792,  0.10460523,
+         0.12869835, -0.06899116,  0.03199914],
+       [-1.97522796,  0.91967799,  0.82846652,  0.33241792,  0.10460523,
+         0.12869835, -0.06899116,  0.03199914]]), array([0.21969293, 0.21969293])]
+[array([[-1.98038178,  0.92211992,  0.83066689,  0.33335295,  0.1049317 ,
+         0.12905519, -0.06913788,  0.03210607],
+       [-1.98038178,  0.92211992,  0.83066689,  0.33335295,  0.1049317 ,
+         0.12905519, -0.06913788,  0.03210607]]), array([0.21996451, 0.21996451])]
+[array([[-1.98038178,  0.92211992,  0.83066689,  0.33335295,  0.1049317 ,
+         0.12905519, -0.06913788,  0.03210607],
+       [-1.98038178,  0.92211992,  0.83066689,  0.33335295,  0.1049317 ,
+         0.12905519, -0.06913788,  0.03210607]]), array([0.21996451, 0.21996451])]
+[array([[-1.98330308,  0.92350568,  0.83191596,  0.33388519,  0.1051207 ,
+         0.12925808, -0.06922745,  0.03216747],
+       [-1.98330308,  0.92350568,  0.83191596,  0.33388519,  0.1051207 ,
+         0.12925808, -0.06922745,  0.03216747]]), array([0.2201166, 0.2201166])]
+[array([[-1.98330308,  0.92350568,  0.83191596,  0.33388519,  0.1051207 ,
+         0.12925808, -0.06922745,  0.03216747],
+       [-1.98330308,  0.92350568,  0.83191596,  0.33388519,  0.1051207 ,
+         0.12925808, -0.06922745,  0.03216747]]), array([0.2201166, 0.2201166])]
+[array([[-1.98495327,  0.92429108,  0.83262324,  0.3341875 ,  0.10522718,
+         0.12937255, -0.06928169,  0.03220279],
+       [-1.98495327,  0.92429108,  0.83262324,  0.3341875 ,  0.10522718,
+         0.12937255, -0.06928169,  0.03220279]]), array([0.22020115, 0.22020115])]D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
@@ -639,19 +643,15 @@ D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X 
   f"X has feature names, but {self.__class__.__name__} was fitted without"
 D:\Anaconda3\envs\fl_py37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
   f"X has feature names, but {self.__class__.__name__} was fitted without"
-INFO flwr 2023-09-18 18:00:09,746 | server.py:125 | fit progress: (30, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.916843)
-DEBUG flwr 2023-09-18 18:00:09,746 | server.py:173 | evaluate_round 30: strategy sampled 6 clients (out of 6)
-DEBUG flwr 2023-09-18 18:00:09,776 | server.py:187 | evaluate_round 30 received 6 results and 0 failures
-INFO flwr 2023-09-18 18:00:09,776 | server.py:147 | FL finished in 2.9473816
-INFO flwr 2023-09-18 18:00:09,777 | app.py:218 | app_fit: losses_distributed [(1, 0.6931471824645996), (2, 0.6931471824645996), (3, 0.6931471824645996), (4, 0.6931471824645996), (5, 0.6931471824645996), (6, 0.6931471824645996), (7, 0.6931471824645996), (8, 0.6931471824645996), (9, 0.6931471824645996), (10, 0.6931471824645996), (11, 0.6931471824645996), (12, 0.6931471824645996), (13, 0.6931471824645996), (14, 0.6931471824645996), (15, 0.6931471824645996), (16, 0.6931471824645996), (17, 0.6931471824645996), (18, 0.6931471824645996), (19, 0.6931471824645996), (20, 0.6931471824645996), (21, 0.6931471824645996), (22, 0.6931471824645996), (23, 0.6931471824645996), (24, 0.6931471824645996), (25, 0.6931471824645996), (26, 0.6931471824645996), (27, 0.6931471824645996), (28, 0.6931471824645996), (29, 0.6931471824645996), (30, 0.6931471824645996)]
-INFO flwr 2023-09-18 18:00:09,777 | app.py:219 | app_fit: metrics_distributed_fit {}
-INFO flwr 2023-09-18 18:00:09,777 | app.py:220 | app_fit: metrics_distributed {}
-INFO flwr 2023-09-18 18:00:09,777 | app.py:221 | app_fit: losses_centralized [(0, 0.6931471805599453), (1, 0.6931471805599453), (2, 0.6931471805599453), (3, 0.6931471805599453), (4, 0.6931471805599453), (5, 0.6931471805599453), (6, 0.6931471805599453), (7, 0.6931471805599453), (8, 0.6931471805599453), (9, 0.6931471805599453), (10, 0.6931471805599453), (11, 0.6931471805599453), (12, 0.6931471805599453), (13, 0.6931471805599453), (14, 0.6931471805599453), (15, 0.6931471805599453), (16, 0.6931471805599453), (17, 0.6931471805599453), (18, 0.6931471805599453), (19, 0.6931471805599453), (20, 0.6931471805599453), (21, 0.6931471805599453), (22, 0.6931471805599453), (23, 0.6931471805599453), (24, 0.6931471805599453), (25, 0.6931471805599453), (26, 0.6931471805599453), (27, 0.6931471805599453), (28, 0.6931471805599453), (29, 0.6931471805599453), (30, 0.6931471805599453)]
-INFO flwr 2023-09-18 18:00:09,777 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.4166666666666667), (1, 0.4166666666666667), (2, 0.4166666666666667), (3, 0.4166666666666667), (4, 0.4166666666666667), (5, 0.4166666666666667), (6, 0.4166666666666667), (7, 0.4166666666666667), (8, 0.4166666666666667), (9, 0.4166666666666667), (10, 0.4166666666666667), (11, 0.4166666666666667), (12, 0.4166666666666667), (13, 0.4166666666666667), (14, 0.4166666666666667), (15, 0.4166666666666667), (16, 0.4166666666666667), (17, 0.4166666666666667), (18, 0.4166666666666667), (19, 0.4166666666666667), (20, 0.4166666666666667), (21, 0.4166666666666667), (22, 0.4166666666666667), (23, 0.4166666666666667), (24, 0.4166666666666667), (25, 0.4166666666666667), (26, 0.4166666666666667), (27, 0.4166666666666667), (28, 0.4166666666666667), (29, 0.4166666666666667), (30, 0.4166666666666667)]}
+INFO flwr 2024-07-11 12:45:48,735 | server.py:131 | fit progress: (30, 0.6931471805599453, {'accuracy': 0.4166666666666667}, 2.994322500000001)
+DEBUG flwr 2024-07-11 12:45:48,736 | server.py:178 | evaluate_round 30: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-11 12:45:48,765 | server.py:192 | evaluate_round 30 received 6 results and 0 failures
+INFO flwr 2024-07-11 12:45:48,766 | server.py:153 | FL finished in 3.0242549000000007
+INFO flwr 2024-07-11 12:45:48,766 | app.py:225 | app_fit: losses_distributed [(1, 0.6931471824645996), (2, 0.6931471824645996), (3, 0.6931471824645996), (4, 0.6931471824645996), (5, 0.6931471824645996), (6, 0.6931471824645996), (7, 0.6931471824645996), (8, 0.6931471824645996), (9, 0.6931471824645996), (10, 0.6931471824645996), (11, 0.6931471824645996), (12, 0.6931471824645996), (13, 0.6931471824645996), (14, 0.6931471824645996), (15, 0.6931471824645996), (16, 0.6931471824645996), (17, 0.6931471824645996), (18, 0.6931471824645996), (19, 0.6931471824645996), (20, 0.6931471824645996), (21, 0.6931471824645996), (22, 0.6931471824645996), (23, 0.6931471824645996), (24, 0.6931471824645996), (25, 0.6931471824645996), (26, 0.6931471824645996), (27, 0.6931471824645996), (28, 0.6931471824645996), (29, 0.6931471824645996), (30, 0.6931471824645996)]
+INFO flwr 2024-07-11 12:45:48,766 | app.py:226 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-07-11 12:45:48,766 | app.py:227 | app_fit: metrics_distributed {}
+INFO flwr 2024-07-11 12:45:48,766 | app.py:228 | app_fit: losses_centralized [(0, 0.6931471805599453), (1, 0.6931471805599453), (2, 0.6931471805599453), (3, 0.6931471805599453), (4, 0.6931471805599453), (5, 0.6931471805599453), (6, 0.6931471805599453), (7, 0.6931471805599453), (8, 0.6931471805599453), (9, 0.6931471805599453), (10, 0.6931471805599453), (11, 0.6931471805599453), (12, 0.6931471805599453), (13, 0.6931471805599453), (14, 0.6931471805599453), (15, 0.6931471805599453), (16, 0.6931471805599453), (17, 0.6931471805599453), (18, 0.6931471805599453), (19, 0.6931471805599453), (20, 0.6931471805599453), (21, 0.6931471805599453), (22, 0.6931471805599453), (23, 0.6931471805599453), (24, 0.6931471805599453), (25, 0.6931471805599453), (26, 0.6931471805599453), (27, 0.6931471805599453), (28, 0.6931471805599453), (29, 0.6931471805599453), (30, 0.6931471805599453)]
+INFO flwr 2024-07-11 12:45:48,767 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.4166666666666667), (1, 0.4166666666666667), (2, 0.4166666666666667), (3, 0.4166666666666667), (4, 0.4166666666666667), (5, 0.4166666666666667), (6, 0.4166666666666667), (7, 0.4166666666666667), (8, 0.4166666666666667), (9, 0.4166666666666667), (10, 0.4166666666666667), (11, 0.4166666666666667), (12, 0.4166666666666667), (13, 0.4166666666666667), (14, 0.4166666666666667), (15, 0.4166666666666667), (16, 0.4166666666666667), (17, 0.4166666666666667), (18, 0.4166666666666667), (19, 0.4166666666666667), (20, 0.4166666666666667), (21, 0.4166666666666667), (22, 0.4166666666666667), (23, 0.4166666666666667), (24, 0.4166666666666667), (25, 0.4166666666666667), (26, 0.4166666666666667), (27, 0.4166666666666667), (28, 0.4166666666666667), (29, 0.4166666666666667), (30, 0.4166666666666667)]}
 
-[array([[-1.98498925,  0.92430442,  0.83264519,  0.33420029,  0.10524618,
-         0.12937559, -0.0692825 ,  0.03220534],
-       [-1.98498925,  0.92430442,  0.83264519,  0.33420029,  0.10524618,
-         0.12937559, -0.0692825 ,  0.03220534]]), array([0.22017396, 0.22017396])]
 >>>>>>>>>>>>>run time:
-1.5625s
+1.59375s
