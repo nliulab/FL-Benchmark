@@ -1,0 +1,694 @@
+2024-07-12 15:47:15.527970: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2024-07-12 15:47:15.528089: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+INFO flwr 2024-07-12 15:47:23,911 | app.py:151 | Starting Flower server, config: ServerConfig(num_rounds=15, round_timeout=None)
+INFO flwr 2024-07-12 15:47:23,983 | app.py:172 | Flower ECE: gRPC server running (15 rounds), SSL is disabled
+INFO flwr 2024-07-12 15:47:23,983 | server.py:86 | Initializing global parameters
+INFO flwr 2024-07-12 15:47:23,984 | server.py:273 | Requesting initial parameters from one random client
+INFO flwr 2024-07-12 15:47:25,458 | server.py:277 | Received initial parameters from one random client
+INFO flwr 2024-07-12 15:47:25,459 | server.py:88 | Evaluating initial parameters
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,481 | server.py:95 | initial parameters (loss, other metrics): 0.6931471805599453, {'accuracy': 0.42}
+INFO flwr 2024-07-12 15:47:25,482 | server.py:101 | FL starting
+DEBUG flwr 2024-07-12 15:47:25,675 | server.py:223 | fit_round 1: strategy sampled 2 clients (out of 3)
+DEBUG flwr 2024-07-12 15:47:25,700 | server.py:237 | fit_round 1 received 2 results and 0 failures
+WARNING flwr 2024-07-12 15:47:25,702 | fedavgm.py:214 | No fit_metrics_aggregation_fn provided
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,712 | server.py:125 | fit progress: (1, 0.4577254433579112, {'accuracy': 0.79}, 0.22981790000000046)
+DEBUG flwr 2024-07-12 15:47:25,712 | server.py:173 | evaluate_round 1: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-12 15:47:25,737 | server.py:187 | evaluate_round 1 received 4 results and 0 failures
+WARNING flwr 2024-07-12 15:47:25,737 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2024-07-12 15:47:25,737 | server.py:223 | fit_round 2: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-07-12 15:47:25,757 | server.py:237 | fit_round 2 received 4 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,765 | server.py:125 | fit progress: (2, 0.363035591446444, {'accuracy': 0.8333333333333334}, 0.28273040000000016)
+DEBUG flwr 2024-07-12 15:47:25,765 | server.py:173 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-12 15:47:25,787 | server.py:187 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:25,787 | server.py:223 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-12 15:47:25,811 | server.py:237 | fit_round 3 received 5 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,821 | server.py:125 | fit progress: (3, 0.3715651068733531, {'accuracy': 0.84}, 0.3390292000000006)
+DEBUG flwr 2024-07-12 15:47:25,821 | server.py:173 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-12 15:47:25,840 | server.py:187 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:25,841 | server.py:223 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-12 15:47:25,867 | server.py:237 | fit_round 4 received 5 results and 0 failures
+>>>>>>>>>>>>> setting initial parameters
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]]
+[array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]), array([0., 0.])]
+[array([[-2.10684867e+00,  9.39881369e-01,  9.10599907e-01,
+         2.60257666e-01,  3.06463883e-01,  2.11236166e-01,
+        -5.82332746e-02, -7.06573447e-02, -9.69710096e-02,
+         2.24064050e-01, -1.71489575e-01, -2.23329205e-02,
+        -5.21532961e-03, -5.84160405e-02, -2.01598933e-02,
+         1.71448075e-01,  7.32643590e-02,  6.93746169e-02,
+         1.70177343e-01, -1.45994219e-02,  6.91156089e-02,
+        -8.94876225e-02, -3.85884280e-02, -1.98995490e-01,
+        -2.89914925e-02, -7.38250016e-03,  6.67426852e-02,
+        -7.15212607e-03, -6.47252004e-03, -1.85849366e-03,
+        -6.15198807e-02,  7.70465896e-03, -8.76600967e-02,
+        -6.35033337e-02,  8.20777438e-02,  2.05200314e-02,
+         1.16960468e-01,  3.79748226e-02, -1.13199567e-01,
+         7.91098156e-02, -1.12401976e-02, -4.39705220e-02,
+         7.51241677e-02, -1.07378080e-01,  3.57178389e-01,
+        -1.10672414e-01,  1.32033403e-01,  2.66268598e-02,
+        -1.93133380e-01, -2.20667652e-02, -9.75806385e-02,
+         6.46486395e-02, -1.51662608e-03,  4.12588549e-02,
+         4.81618126e-02, -5.17841065e-02, -7.96347107e-03,
+        -4.85397016e-02, -1.75728067e-01,  9.02417164e-02,
+        -8.09920713e-02, -4.93179019e-02, -3.03174097e-02,
+         1.42198599e-02, -1.64121711e-01,  1.34224806e-01,
+         1.54051499e-01,  7.42256133e-02, -8.57739776e-02,
+        -6.83872580e-03, -6.70990179e-03,  4.40010763e-02,
+         2.61803516e-03, -2.25850066e-02, -1.42705260e-01,
+         3.40206134e-02, -5.11335268e-02,  1.09579709e-01,
+         3.52766104e-02,  7.33040977e-02, -7.09407749e-02,
+        -5.42145266e-02, -1.31820821e-01,  6.75578566e-02,
+         9.63587548e-04,  6.28897523e-02,  1.46080606e-01,
+        -4.65993683e-02, -1.51479071e-02, -5.42128011e-02,
+         5.02344628e-02, -1.93528139e-02,  8.93635290e-02,
+        -1.32553500e-01, -3.52496930e-02,  1.67766106e-01,
+         2.56294326e-02,  5.27372182e-02, -4.57956944e-02,
+         9.30553901e-02]]), array([-0.00263187])]
+[array([[-2.46720648e+00,  1.24760943e+00,  9.42897646e-01,
+         3.55505707e-01,  3.27357131e-01,  1.10700582e-01,
+         5.31296512e-02, -1.01002270e-01, -3.44016761e-02,
+         5.01526210e-02, -1.28621883e-01, -2.72097882e-02,
+        -1.98304596e-02,  4.24117165e-02,  2.50867934e-02,
+         1.10092167e-01,  1.09531490e-01,  6.00566987e-02,
+         1.13828331e-01, -1.64677145e-02, -9.91489072e-03,
+         6.49871840e-02,  3.99688831e-02, -3.97487217e-02,
+        -4.18474070e-02, -5.08246391e-03,  9.93363478e-02,
+        -3.06639324e-02,  6.49294762e-02,  8.37752726e-02,
+         1.02099849e-01, -1.08427589e-02, -3.97206286e-02,
+        -8.33261758e-02,  8.60637369e-02,  2.77130433e-02,
+        -3.59414026e-02, -1.10429780e-03, -1.35467011e-01,
+         1.12006132e-02, -5.67129700e-02, -9.30182915e-02,
+         9.23902128e-02,  9.34617444e-03,  1.06604931e-01,
+        -6.71356973e-02,  1.46723132e-01,  3.16143780e-03,
+        -1.31681319e-01, -7.13594982e-03, -1.66749597e-01,
+         1.09192670e-01,  2.69875008e-02, -2.07434263e-02,
+         3.56292611e-02, -2.27918088e-01, -4.28716608e-02,
+         3.77110020e-02, -1.13095196e-01,  1.06314193e-01,
+        -1.70960949e-02, -5.37277959e-02, -2.78549251e-02,
+         6.10070747e-02, -1.36655712e-01,  3.49398034e-02,
+         5.43657299e-02,  2.50232932e-02,  6.06794139e-02,
+         7.84326241e-02, -1.07876884e-01,  1.46857088e-01,
+        -2.11580285e-02,  1.12322948e-02, -3.99859228e-03,
+        -1.52194697e-01,  1.79520619e-02,  9.20033538e-02,
+        -6.28287899e-03, -4.49406590e-02, -5.92233072e-02,
+         4.91636740e-02, -3.15593012e-04,  5.50963239e-02,
+        -2.17653047e-02, -2.49459512e-02,  8.77519712e-02,
+        -1.47779749e-01, -1.05351330e-01, -2.71501625e-02,
+         2.41843284e-02,  2.76607401e-04,  1.55828796e-01,
+        -4.53349582e-02,  7.48216790e-03,  6.10567202e-02,
+         1.46847175e-02,  4.57719684e-03,  3.74875025e-02,
+        -8.56973770e-03]]), array([-0.02318161])]
+[array([[-2.57414705e+00,  1.28406537e+00,  9.84461520e-01,
+         3.79656272e-01,  2.96039924e-01,  1.25921470e-01,
+         3.91079932e-02,  1.10243288e-02,  1.60491427e-02,
+         1.07585435e-01, -6.80440898e-02, -6.35545826e-02,
+        -5.40029686e-02,  6.69691972e-02,  3.41884726e-02,
+         8.07583389e-02,  9.52664726e-02,  1.54172124e-01,
+         1.52685925e-01,  2.10979123e-02,  6.77018261e-02,
+         5.80398087e-02,  5.76240451e-03, -4.55209450e-02,
+        -2.41340830e-02,  7.41918727e-04,  1.57327223e-02,
+         2.68625727e-02,  6.92752560e-02,  1.86517299e-02,
+         1.06316351e-01,  1.35290630e-02, -5.86246517e-02,
+        -8.00860434e-02,  2.42012089e-02,  3.72738648e-02,
+        -1.13667264e-02,  2.24850232e-02, -1.27294557e-01,
+        -1.52008281e-02, -5.84919725e-02, -7.19636707e-02,
+         4.61293328e-02,  5.09735327e-02,  5.32086225e-02,
+        -5.29865580e-02,  2.44244916e-02,  2.73387436e-02,
+        -1.21554204e-01, -1.34326178e-02, -8.70888055e-02,
+         5.68932742e-02, -1.94470570e-02, -1.81250262e-02,
+         2.24190781e-02, -1.45119794e-01, -3.54034994e-02,
+         2.21662721e-04, -4.58277824e-02,  4.14831913e-02,
+        -2.08872805e-03, -4.38715710e-02, -1.69774099e-02,
+         4.61734251e-02, -3.62354284e-02,  1.45891755e-02,
+         2.84440809e-02, -1.87586364e-02,  3.54578982e-02,
+         4.27000595e-02, -8.31136948e-02,  7.05333391e-02,
+        -4.85307737e-03, -2.79284184e-03, -4.78578228e-02,
+        -8.27326970e-02,  7.84469355e-02,  5.65561860e-02,
+        -3.09510627e-02, -1.83881351e-02, -6.57640514e-02,
+        -5.81832836e-03,  1.90008646e-02,  3.93240507e-02,
+        -3.07333472e-03,  2.38693335e-02,  8.47923061e-02,
+        -8.68491179e-02, -9.87298865e-02,  8.24279609e-03,
+         9.60381514e-03,  5.20095484e-02,  1.11768960e-01,
+        -6.39106402e-02, -6.57149617e-02,  4.87746414e-02,
+        -7.72246086e-03, -9.25246012e-03, -2.35377955e-02,
+        -5.70228525e-02]]), array([-0.06296648])]
+[array([[-2.52382249e+00,  1.25206986e+00,  9.61531547e-01,
+         3.68063366e-01,  2.80343867e-01,  1.21346603e-01,
+         4.19049951e-02,  1.34199957e-02,  8.84116901e-03,
+         1.07149762e-01, -6.26886789e-02, -6.31041067e-02,
+        -4.64349755e-02,  6.52104110e-02,  3.45308035e-02,
+         8.51699528e-02,  9.75157525e-02,  1.38169447e-01,
+         1.42766658e-01,  2.14272479e-02,  7.18742709e-02,
+         5.32974409e-02, -7.12464938e-03, -3.95784548e-02,
+        -2.10379544e-02,  4.76622327e-04,  1.53313134e-02,
+         1.99988383e-02,  7.02783476e-02,  2.73006090e-02,
+         1.07653929e-01,  1.40374296e-02, -6.31392173e-02,
+        -8.01607934e-02,  1.85461458e-02,  2.29109273e-02,
+        -4.61227512e-03,  2.85882724e-02, -1.17504441e-01,
+        -1.75102722e-02, -5.30754610e-02, -6.68429558e-02,
+         5.23616893e-02,  5.35230721e-02,  5.62445468e-02,
+        -5.48469798e-02,  2.60990565e-02,  2.06676754e-02,
+        -1.14042048e-01, -7.92588813e-03, -7.37907033e-02,
+         5.01957911e-02, -1.88308152e-02, -1.86127011e-02,
+         2.65981098e-02, -1.35150539e-01, -4.40994417e-02,
+        -7.59892585e-03, -5.01237187e-02,  3.30806134e-02,
+        -1.00607273e-02, -4.86566076e-02, -8.78669114e-03,
+         4.25388052e-02, -2.37247578e-02,  1.55771983e-02,
+         2.82349446e-02, -2.74462802e-02,  3.21466723e-02,
+         4.18637823e-02, -8.43800451e-02,  6.85606697e-02,
+        -1.75336815e-02,  2.18718009e-03, -4.70205331e-02,
+        -7.94060842e-02,  8.20500549e-02,  6.75129985e-02,
+        -2.18343079e-02, -9.76068184e-03, -7.30608982e-02,
+        -1.15736041e-02,  1.90461184e-02,  3.29382679e-02,
+         1.62642911e-03,  2.37166157e-02,  8.54755600e-02,
+        -8.06237346e-02, -1.00805145e-01,  5.75764859e-03,
+         3.21016142e-03,  4.87608382e-02,  1.07452064e-01,
+        -6.14542044e-02, -5.87854660e-02,  4.18464189e-02,
+         5.04276753e-03, -1.34355260e-02, -2.24810488e-02,
+        -4.88172974e-02]]), array([-0.07156096])]C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,880 | server.py:125 | fit progress: (4, 0.374770762215459, {'accuracy': 0.83}, 0.3988522000000003)
+DEBUG flwr 2024-07-12 15:47:25,880 | server.py:173 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2024-07-12 15:47:25,903 | server.py:187 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:25,903 | server.py:223 | fit_round 5: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:25,935 | server.py:237 | fit_round 5 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,944 | server.py:125 | fit progress: (5, 0.38167236657737635, {'accuracy': 0.8266666666666667}, 0.46237370000000055)
+DEBUG flwr 2024-07-12 15:47:25,944 | server.py:173 | evaluate_round 5: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:25,961 | server.py:187 | evaluate_round 5 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:25,961 | server.py:223 | fit_round 6: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:25,989 | server.py:237 | fit_round 6 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:25,997 | server.py:125 | fit progress: (6, 0.3594402849096482, {'accuracy': 0.8366666666666667}, 0.5152815000000004)
+DEBUG flwr 2024-07-12 15:47:25,997 | server.py:173 | evaluate_round 6: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,015 | server.py:187 | evaluate_round 6 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,016 | server.py:223 | fit_round 7: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,044 | server.py:237 | fit_round 7 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,052 | server.py:125 | fit progress: (7, 0.364291586450934, {'accuracy': 0.8333333333333334}, 0.5705518000000005)
+DEBUG flwr 2024-07-12 15:47:26,052 | server.py:173 | evaluate_round 7: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,072 | server.py:187 | evaluate_round 7 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,072 | server.py:223 | fit_round 8: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,101 | server.py:237 | fit_round 8 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,110 | server.py:125 | fit progress: (8, 0.3592176613317229, {'accuracy': 0.8366666666666667}, 0.6281695999999997)
+DEBUG flwr 2024-07-12 15:47:26,110 | server.py:173 | evaluate_round 8: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,129 | server.py:187 | evaluate_round 8 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,130 | server.py:223 | fit_round 9: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,158 | server.py:237 | fit_round 9 received 6 results and 0 failures
+
+[array([[-2.41008677e+00,  1.23854437e+00,  9.65496893e-01,
+         4.08474909e-01,  3.06197604e-01,  1.11211691e-01,
+         4.08605517e-03, -3.92733571e-02,  6.24588188e-03,
+         5.10799047e-02, -1.47950637e-02, -6.43672776e-02,
+        -3.25724341e-02,  3.77682564e-02,  2.83918435e-02,
+         6.67404252e-02,  4.00596591e-02,  9.47488533e-02,
+         7.04068816e-02,  4.38987209e-02,  5.15935441e-02,
+         1.15559075e-02, -2.51300719e-02, -3.75242971e-02,
+        -2.30301357e-02, -7.13099379e-03, -1.78963066e-02,
+         1.47885249e-02,  3.71444927e-02, -3.64696069e-03,
+         7.76234042e-02,  4.80814339e-02, -5.07830290e-02,
+        -3.28573607e-02, -7.06409171e-03,  1.31337337e-02,
+        -4.00350034e-02,  6.50169713e-03, -9.42586058e-02,
+        -3.83205526e-02, -3.96551303e-02, -4.95329146e-02,
+         6.01991638e-02,  4.05356506e-02,  2.04996493e-02,
+        -8.42716132e-02, -5.93156221e-03,  4.00280603e-02,
+        -7.46773832e-02,  4.13754836e-02, -3.46719671e-02,
+         5.97196078e-02,  4.37778626e-02, -7.73814112e-03,
+         1.05379523e-02, -7.76861783e-02,  1.69843765e-02,
+         1.74407482e-02, -5.46834809e-02,  1.19895099e-02,
+         7.12339570e-03, -1.45046917e-02, -6.61605937e-03,
+         2.49372611e-02, -6.84931188e-02, -1.84363406e-02,
+         9.56873208e-03, -3.40092454e-02,  5.29857840e-02,
+         1.38031991e-02, -5.60246518e-02,  3.01441807e-02,
+         3.29356623e-02, -2.20154079e-02, -4.14086066e-02,
+        -7.18529880e-02,  3.50733215e-02,  2.55618655e-02,
+         1.62943194e-02,  1.26943511e-02, -3.47957938e-02,
+        -4.17846223e-02,  2.21446321e-02,  2.70197983e-02,
+         1.37262654e-02,  1.59032958e-02,  2.29452712e-02,
+        -9.80161052e-03, -6.47167762e-02,  1.25775589e-02,
+         4.00079742e-02,  3.86697076e-02,  6.17048542e-02,
+        -8.39827919e-03, -3.52186769e-02,  3.32057424e-02,
+         6.62520425e-05, -1.10602343e-02, -3.00497347e-02,
+        -2.58696481e-02]]), array([-0.10323224])]
+[array([[-2.50415213e+00,  1.29900772e+00,  1.01161341e+00,
+         4.06504303e-01,  3.57841182e-01,  1.18232976e-01,
+         3.11131712e-02, -3.91968736e-02,  3.49956572e-02,
+         2.74163249e-02, -2.14530575e-02, -6.22814765e-02,
+        -3.62255510e-02,  6.73753478e-02,  1.40926186e-02,
+         4.91696278e-02,  3.11943542e-02,  1.10427831e-01,
+         9.84298546e-02,  1.32173017e-02,  5.22986436e-02,
+         3.14110484e-02,  1.48331939e-02, -3.98383068e-02,
+        -3.02326169e-02, -1.18559703e-02, -1.39879236e-02,
+         2.86434446e-02,  6.19497213e-02, -4.66500816e-02,
+         8.89661365e-02,  6.34934891e-02, -4.71771719e-02,
+        -2.01242442e-02,  5.89810778e-03,  7.00123286e-02,
+        -6.45349406e-02,  2.46436286e-03, -1.01314157e-01,
+        -4.78858800e-02, -4.52969325e-02, -7.09638441e-02,
+         4.29212781e-02,  5.04943274e-02,  2.83296323e-02,
+        -8.33736657e-02,  3.22875075e-02,  2.12096889e-02,
+        -7.19492255e-02,  6.16711931e-02, -7.31959791e-02,
+         6.23665560e-02,  6.04784965e-02, -9.59386918e-03,
+        -6.45244656e-03, -9.32393201e-02, -2.24356574e-02,
+         4.29190776e-02, -4.98886015e-02,  3.97577714e-02,
+         3.74844165e-02, -2.38477304e-02, -9.24141324e-03,
+         3.50806469e-02, -9.45269323e-02, -1.60334009e-02,
+         1.13214940e-02, -1.70950571e-02,  5.92646205e-02,
+         4.51832915e-02, -6.71506371e-02,  4.00611082e-02,
+         3.55588767e-02, -2.74945274e-02, -2.37713013e-02,
+        -1.06297265e-01,  3.17646772e-02,  1.76852088e-02,
+         4.85678252e-03, -1.56310924e-02, -2.18017288e-02,
+        -3.79926516e-02,  1.19630120e-02,  3.61411657e-02,
+        -1.95300592e-03,  1.41712727e-03,  1.07267372e-02,
+        -5.90619900e-02, -6.20392095e-02,  2.34958323e-03,
+         7.74639734e-02,  3.04779356e-02,  8.17989577e-02,
+        -5.71925803e-02, -3.87902894e-02,  2.90012055e-02,
+        -2.04508827e-02,  1.32984508e-02, -1.97455826e-02,
+        -5.33657087e-02]]), array([-0.11769516])]
+[array([[-2.48331431e+00,  1.28906998e+00,  1.00285145e+00,
+         4.08741671e-01,  3.43663120e-01,  1.16676657e-01,
+         2.62119401e-02, -4.05612203e-02,  2.69777826e-02,
+         3.40168249e-02, -1.86020225e-02, -6.01215217e-02,
+        -3.45797528e-02,  6.01383441e-02,  1.82287609e-02,
+         5.34742484e-02,  3.40744953e-02,  1.08512268e-01,
+         8.70029807e-02,  2.00044154e-02,  5.23886884e-02,
+         2.82057375e-02,  8.35484286e-03, -3.99738122e-02,
+        -2.93643717e-02, -9.07739805e-03, -1.14772107e-02,
+         2.35462472e-02,  5.42203713e-02, -3.12014705e-02,
+         8.29664366e-02,  5.74366320e-02, -4.52491528e-02,
+        -2.28903118e-02,  4.68889122e-03,  5.87807136e-02,
+        -5.94582663e-02,  4.20291662e-03, -9.97849478e-02,
+        -4.25215467e-02, -4.36738322e-02, -6.33238959e-02,
+         4.69981829e-02,  4.82820020e-02,  2.40247519e-02,
+        -8.19394683e-02,  2.03438074e-02,  2.86153434e-02,
+        -7.75014722e-02,  5.78251880e-02, -6.84843409e-02,
+         5.68897795e-02,  5.52097410e-02, -1.00677153e-02,
+        -3.41653545e-04, -9.19091349e-02, -1.33133233e-02,
+         3.77849206e-02, -4.86433417e-02,  3.29844879e-02,
+         3.42103375e-02, -1.86649744e-02, -1.45301292e-02,
+         3.38902553e-02, -8.75666307e-02, -1.58881481e-02,
+         1.49852545e-02, -1.95996998e-02,  6.10731476e-02,
+         3.96193244e-02, -6.66691202e-02,  4.02404082e-02,
+         3.55161080e-02, -2.68492477e-02, -3.06378523e-02,
+        -9.67642082e-02,  3.09212095e-02,  1.97030104e-02,
+         5.92976701e-03, -8.50451444e-03, -2.37358683e-02,
+        -3.74741294e-02,  1.70623999e-02,  3.56937032e-02,
+         3.42077617e-03,  4.63566298e-03,  1.84665702e-02,
+        -4.68169347e-02, -6.05854949e-02,  4.30004993e-03,
+         6.55239120e-02,  3.65737640e-02,  7.55817627e-02,
+        -4.31763959e-02, -4.07011804e-02,  3.12402974e-02,
+        -1.88165059e-02,  8.65328208e-03, -2.55032780e-02,
+        -4.86218386e-02]]), array([-0.14860516])]
+[array([[-2.49576944e+00,  1.29541706e+00,  1.01039382e+00,
+         4.04932113e-01,  3.53890182e-01,  1.20652381e-01,
+         2.97579201e-02, -3.12381703e-02,  3.64477276e-02,
+         2.76364340e-02, -1.93841597e-02, -5.58232614e-02,
+        -3.96494261e-02,  7.18828876e-02,  1.25651746e-02,
+         5.05895641e-02,  3.44409495e-02,  1.11360148e-01,
+         1.00018434e-01,  1.23553686e-02,  5.10728882e-02,
+         3.40400085e-02,  1.33241459e-02, -4.11701122e-02,
+        -2.77257310e-02, -1.12210761e-02, -9.08960458e-03,
+         2.46925251e-02,  5.78863199e-02, -4.12968076e-02,
+         9.24792642e-02,  5.64202848e-02, -4.61050344e-02,
+        -1.81778612e-02,  5.33340279e-03,  6.99661717e-02,
+        -6.36238351e-02,  6.72830899e-03, -9.92560707e-02,
+        -4.17058164e-02, -4.37105815e-02, -6.84006022e-02,
+         4.29434580e-02,  5.09465410e-02,  2.86789885e-02,
+        -7.86894307e-02,  3.24697852e-02,  2.06585778e-02,
+        -7.58996641e-02,  5.64921403e-02, -7.41427164e-02,
+         5.44064742e-02,  5.81351103e-02, -1.16134180e-02,
+        -3.89290570e-03, -9.55455305e-02, -3.09574950e-02,
+         4.07658396e-02, -5.12695825e-02,  3.82323325e-02,
+         3.77203354e-02, -2.57989762e-02, -1.33416790e-02,
+         3.16831262e-02, -9.21297835e-02, -1.05334111e-02,
+         1.26794142e-02, -1.54927742e-02,  6.07926883e-02,
+         4.91786341e-02, -7.04377632e-02,  3.56703099e-02,
+         3.60468798e-02, -2.19572334e-02, -2.85628265e-02,
+        -1.03349407e-01,  3.19857072e-02,  2.00554267e-02,
+         1.53499386e-03, -1.55032062e-02, -2.23533765e-02,
+        -3.22426205e-02,  1.67360224e-02,  3.77415784e-02,
+        -1.75505851e-03,  3.46966672e-03,  1.55774865e-02,
+        -6.20575283e-02, -6.45941852e-02,  4.63714784e-03,
+         7.25176783e-02,  3.74469074e-02,  8.44736210e-02,
+        -5.50753874e-02, -3.91446803e-02,  2.68841144e-02,
+        -1.96067611e-02,  1.27401864e-02, -1.81868724e-02,
+        -5.28800568e-02]]), array([-0.16254691])]
+[array([[-2.52466407e+00,  1.31311923e+00,  1.01727021e+00,
+         4.07485505e-01,  3.61686440e-01,  1.22677395e-01,
+         4.14612082e-02, -3.91359730e-02,  3.71437411e-02,
+         2.43284355e-02, -1.75691821e-02, -6.07240022e-02,
+        -3.48879389e-02,  7.32817406e-02,  1.11203766e-02,
+         4.73265833e-02,  3.16435730e-02,  1.15847889e-01,
+         9.82226376e-02,  1.06884094e-02,  5.37237349e-02,
+         4.07587755e-02,  2.71191675e-02, -4.11310123e-02,
+        -3.03488568e-02, -7.85854739e-03, -8.86434641e-03,
+         2.80059225e-02,  6.30958147e-02, -4.91831807e-02,
+         9.13178078e-02,  5.98361424e-02, -4.21230806e-02,
+        -1.69246075e-02,  1.02852669e-02,  7.94817771e-02,
+        -6.63357321e-02,  1.49179708e-03, -1.05496094e-01,
+        -4.50549239e-02, -4.90365811e-02, -7.05577544e-02,
+         4.13360236e-02,  5.00938695e-02,  2.17338189e-02,
+        -7.97769066e-02,  3.69326453e-02,  2.17984339e-02,
+        -7.58242729e-02,  6.41194916e-02, -8.29701056e-02,
+         6.01348418e-02,  6.09229204e-02, -9.92704840e-03,
+        -1.98631527e-03, -9.81982938e-02, -2.86574855e-02,
+         5.12874569e-02, -4.54535151e-02,  4.28804202e-02,
+         5.02214381e-02, -2.32350620e-02, -2.19169026e-02,
+         3.87377065e-02, -9.62090595e-02, -1.57470465e-02,
+         1.44596323e-02, -1.19981134e-02,  6.21921579e-02,
+         5.28129609e-02, -7.19047984e-02,  4.11214701e-02,
+         3.79766714e-02, -2.74408476e-02, -2.50776709e-02,
+        -1.11186089e-01,  2.69110807e-02,  1.51288519e-02,
+         3.28927441e-04, -1.89444357e-02, -1.67398458e-02,
+        -3.15276189e-02,  1.58048534e-02,  3.80300236e-02,
+        -1.09304885e-03, -2.90633950e-04,  1.52805538e-02,
+        -6.52414079e-02, -6.15784763e-02,  3.24504534e-03,
+         7.95321563e-02,  3.61624333e-02,  8.82735546e-02,
+        -6.05456640e-02, -3.81080098e-02,  2.79717895e-02,
+        -2.84849799e-02,  1.85266677e-02, -2.10657536e-02,
+        -5.74568463e-02]]), array([-0.19031832])]C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,167 | server.py:125 | fit progress: (9, 0.35582949776189354, {'accuracy': 0.8366666666666667}, 0.6850561000000006)
+DEBUG flwr 2024-07-12 15:47:26,167 | server.py:173 | evaluate_round 9: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,185 | server.py:187 | evaluate_round 9 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,185 | server.py:223 | fit_round 10: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,215 | server.py:237 | fit_round 10 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,228 | server.py:125 | fit progress: (10, 0.3647695747703418, {'accuracy': 0.8333333333333334}, 0.7457519000000001)
+DEBUG flwr 2024-07-12 15:47:26,228 | server.py:173 | evaluate_round 10: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,247 | server.py:187 | evaluate_round 10 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,248 | server.py:223 | fit_round 11: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,276 | server.py:237 | fit_round 11 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,285 | server.py:125 | fit progress: (11, 0.3559184488423, {'accuracy': 0.84}, 0.8031821000000008)
+DEBUG flwr 2024-07-12 15:47:26,285 | server.py:173 | evaluate_round 11: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,304 | server.py:187 | evaluate_round 11 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,304 | server.py:223 | fit_round 12: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,333 | server.py:237 | fit_round 12 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,345 | server.py:125 | fit progress: (12, 0.3645017054946848, {'accuracy': 0.8333333333333334}, 0.8637744000000005)
+DEBUG flwr 2024-07-12 15:47:26,346 | server.py:173 | evaluate_round 12: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,375 | server.py:187 | evaluate_round 12 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,375 | server.py:223 | fit_round 13: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,420 | server.py:237 | fit_round 13 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,434 | server.py:125 | fit progress: (13, 0.3629073527041577, {'accuracy': 0.8333333333333334}, 0.9524068999999997)
+DEBUG flwr 2024-07-12 15:47:26,434 | server.py:173 | evaluate_round 13: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,473 | server.py:187 | evaluate_round 13 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,473 | server.py:223 | fit_round 14: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,525 | server.py:237 | fit_round 14 received 6 results and 0 failures
+
+[array([[-2.44490952e+00,  1.26440901e+00,  9.84399466e-01,
+         4.00427590e-01,  3.34023763e-01,  1.15548250e-01,
+         2.77547035e-02, -3.70544052e-02,  2.46393863e-02,
+         3.21313104e-02, -1.52342572e-02, -5.54821188e-02,
+        -3.40329418e-02,  6.08628976e-02,  1.73205740e-02,
+         5.69052618e-02,  3.56587011e-02,  1.03424859e-01,
+         8.49277935e-02,  1.96235530e-02,  5.39869920e-02,
+         2.82871864e-02,  3.72413587e-03, -3.45697995e-02,
+        -2.61048269e-02, -7.09025510e-03, -9.28732426e-03,
+         1.94498878e-02,  5.17904617e-02, -2.75038260e-02,
+         8.90246094e-02,  5.35843827e-02, -4.35993622e-02,
+        -1.77748795e-02,  4.82298176e-03,  5.11750051e-02,
+        -5.60671643e-02,  7.70850452e-03, -9.30472001e-02,
+        -3.87573531e-02, -4.12591415e-02, -5.98713975e-02,
+         5.07135100e-02,  4.88853548e-02,  2.48567440e-02,
+        -8.06622785e-02,  2.23688124e-02,  2.68981026e-02,
+        -7.34152882e-02,  5.96296082e-02, -6.00982278e-02,
+         5.01661838e-02,  5.49157509e-02, -7.89517746e-03,
+         3.90782657e-03, -8.87253188e-02, -2.11258879e-02,
+         3.31855373e-02, -4.86923491e-02,  2.88359621e-02,
+         3.14550783e-02, -2.23753526e-02, -1.30329569e-02,
+         3.23699685e-02, -8.34142080e-02, -1.34901638e-02,
+         1.58881963e-02, -2.01450193e-02,  5.90335104e-02,
+         4.14293260e-02, -7.00327841e-02,  3.29484782e-02,
+         2.95557457e-02, -2.06343316e-02, -3.29405588e-02,
+        -9.18926216e-02,  3.37981865e-02,  2.92861656e-02,
+         1.03770570e-02, -1.51389082e-03, -2.63728629e-02,
+        -3.14709549e-02,  1.73708839e-02,  3.36165253e-02,
+         6.85870833e-03,  5.85724273e-03,  2.16626220e-02,
+        -4.77288044e-02, -6.01170292e-02,  3.64541978e-03,
+         6.18518137e-02,  3.24033313e-02,  7.74226447e-02,
+        -4.29645788e-02, -3.61443103e-02,  2.52123764e-02,
+        -1.47166492e-02,  6.33538237e-03, -2.63728936e-02,
+        -4.23773182e-02]]), array([-0.19727384])]
+[array([[-2.51062080e+00,  1.30715874e+00,  1.01377341e+00,
+         4.08193289e-01,  3.58757331e-01,  1.21409982e-01,
+         3.70884419e-02, -3.91093315e-02,  3.97664453e-02,
+         2.61874929e-02, -1.90328613e-02, -5.76018071e-02,
+        -3.47539800e-02,  7.30487400e-02,  1.08925645e-02,
+         4.77428195e-02,  3.12807663e-02,  1.16115607e-01,
+         1.00223647e-01,  1.05036620e-02,  5.23828353e-02,
+         3.86839262e-02,  2.80770556e-02, -4.15117016e-02,
+        -3.08393345e-02, -9.26413735e-03, -9.47120042e-03,
+         2.80009282e-02,  6.37923179e-02, -4.73718137e-02,
+         9.23611292e-02,  6.08142420e-02, -4.24089169e-02,
+        -1.78307722e-02,  9.93004957e-03,  7.75910239e-02,
+        -6.48104800e-02,  2.88572860e-03, -1.04567205e-01,
+        -4.47434052e-02, -4.70245001e-02, -6.79971765e-02,
+         4.19105682e-02,  5.01304879e-02,  2.46229374e-02,
+        -7.78145654e-02,  3.52292723e-02,  2.24628231e-02,
+        -7.55504087e-02,  6.27944808e-02, -8.09487046e-02,
+         6.00216846e-02,  5.91733565e-02, -1.18897626e-02,
+        -3.51364323e-03, -9.86533111e-02, -2.80204989e-02,
+         4.90793260e-02, -4.49177912e-02,  4.29715162e-02,
+         4.93914956e-02, -2.13125783e-02, -1.92718930e-02,
+         3.92277644e-02, -9.58202625e-02, -1.50805595e-02,
+         1.39615403e-02, -9.77032836e-03,  6.37666361e-02,
+         5.19155273e-02, -7.12310862e-02,  4.27197595e-02,
+         3.81715842e-02, -2.64194568e-02, -2.37133683e-02,
+        -1.08033694e-01,  2.76722980e-02,  1.73410527e-02,
+         1.68943698e-03, -1.80526538e-02, -1.44795373e-02,
+        -3.02618909e-02,  1.38834010e-02,  4.01404338e-02,
+        -8.01650731e-04,  2.95082597e-03,  1.53709058e-02,
+        -6.54021503e-02, -6.09627762e-02,  1.23816582e-03,
+         7.70800125e-02,  3.50725663e-02,  8.92897775e-02,
+        -5.95572644e-02, -4.02399862e-02,  2.77741504e-02,
+        -2.82583275e-02,  1.75392379e-02, -2.29308580e-02,
+        -5.58759645e-02]]), array([-0.22345854])]
+[array([[-2.45137818e+00,  1.27002924e+00,  9.88374916e-01,
+         4.02652607e-01,  3.37171995e-01,  1.16691819e-01,
+         2.64750290e-02, -3.56826213e-02,  2.69618873e-02,
+         3.22895901e-02, -1.65539435e-02, -5.51035344e-02,
+        -3.48621509e-02,  6.39342817e-02,  1.89051337e-02,
+         5.58132586e-02,  3.57681049e-02,  1.04026701e-01,
+         8.87417673e-02,  2.06482786e-02,  5.37020246e-02,
+         2.87482555e-02,  3.86507375e-03, -3.53791143e-02,
+        -2.58198253e-02, -7.43812796e-03, -9.00155853e-03,
+         1.93348180e-02,  5.31242363e-02, -2.94840536e-02,
+         8.84543970e-02,  5.65098111e-02, -4.46628637e-02,
+        -1.86789840e-02,  5.69491738e-03,  5.55042907e-02,
+        -5.65874910e-02,  9.13103117e-03, -9.41824452e-02,
+        -4.11054543e-02, -4.23351106e-02, -6.07215412e-02,
+         5.04573838e-02,  4.91944563e-02,  2.59199918e-02,
+        -7.87657141e-02,  2.39397940e-02,  2.55384964e-02,
+        -7.26274151e-02,  5.77150271e-02, -6.14732427e-02,
+         5.19700866e-02,  5.49906237e-02, -8.92128198e-03,
+         1.68272142e-03, -8.91782217e-02, -2.18720984e-02,
+         3.43545785e-02, -4.92664876e-02,  3.16763241e-02,
+         3.16956020e-02, -2.22941791e-02, -1.25053245e-02,
+         3.02364121e-02, -8.34762666e-02, -1.07665536e-02,
+         1.59190031e-02, -1.98891880e-02,  6.05343646e-02,
+         4.30546912e-02, -6.84187479e-02,  3.62746644e-02,
+         3.20897801e-02, -2.04940864e-02, -3.06503928e-02,
+        -9.19474552e-02,  3.41319674e-02,  2.80565851e-02,
+         9.19079210e-03, -3.76940280e-03, -2.63765714e-02,
+        -3.21931037e-02,  1.61761138e-02,  3.44493489e-02,
+         5.64164035e-03,  6.56984503e-03,  1.96601664e-02,
+        -4.92986444e-02, -6.12705519e-02,  4.51762127e-03,
+         6.43178531e-02,  3.70283528e-02,  7.78193489e-02,
+        -4.29643292e-02, -3.71575743e-02,  2.66573444e-02,
+        -1.49935324e-02,  7.73024309e-03, -2.28821239e-02,
+        -4.35275473e-02]]), array([-0.22994815])]
+[array([[-2.47243120e+00,  1.28327773e+00,  1.00068853e+00,
+         4.06895104e-01,  3.46031234e-01,  1.19637316e-01,
+         2.86937167e-02, -3.60818737e-02,  3.07247948e-02,
+         3.52613767e-02, -1.77134351e-02, -5.73940278e-02,
+        -3.34160024e-02,  6.40466822e-02,  1.94058089e-02,
+         5.29560990e-02,  3.41817542e-02,  1.08885702e-01,
+         9.17906478e-02,  2.00948518e-02,  5.30095620e-02,
+         3.13021864e-02,  1.16612858e-02, -4.09475357e-02,
+        -2.88264832e-02, -9.98768655e-03, -9.96781636e-03,
+         2.43990876e-02,  5.66931937e-02, -3.24987370e-02,
+         8.60357406e-02,  5.68864139e-02, -4.41629112e-02,
+        -2.26991388e-02,  5.24644420e-03,  6.08175069e-02,
+        -5.97342355e-02,  7.18595428e-03, -9.81386804e-02,
+        -4.23539991e-02, -4.26863078e-02, -6.23694851e-02,
+         4.68310470e-02,  4.86559759e-02,  2.77017421e-02,
+        -7.80119594e-02,  2.45085527e-02,  2.86262217e-02,
+        -7.74537762e-02,  5.87878781e-02, -6.97010008e-02,
+         5.87308034e-02,  5.57735448e-02, -1.22742193e-02,
+        -4.11770636e-04, -9.10171609e-02, -1.69696159e-02,
+         4.13135614e-02, -4.75211232e-02,  3.61811456e-02,
+         3.56822449e-02, -1.85096466e-02, -1.40100573e-02,
+         3.64033935e-02, -8.83478486e-02, -1.14965860e-02,
+         1.52555542e-02, -1.79614106e-02,  6.23271327e-02,
+         4.35510388e-02, -6.67268082e-02,  3.86099867e-02,
+         3.52587386e-02, -2.29330447e-02, -2.77441195e-02,
+        -9.76470394e-02,  3.15568653e-02,  2.15306499e-02,
+         6.60911736e-03, -9.13045304e-03, -2.13796673e-02,
+        -3.42637005e-02,  1.82162036e-02,  3.81056525e-02,
+         4.33657248e-03,  6.69544420e-03,  1.84613716e-02,
+        -4.95392927e-02, -5.97334726e-02,  3.81130064e-03,
+         6.71655060e-02,  3.64473195e-02,  7.89096658e-02,
+        -4.55363504e-02, -3.89144656e-02,  3.12626559e-02,
+        -1.74109875e-02,  8.87845654e-03, -2.33757968e-02,
+        -4.76559561e-02]]), array([-0.25396212])]
+[array([[-2.46774291e+00,  1.28143356e+00,  9.98206408e-01,
+         4.07541959e-01,  3.41814136e-01,  1.18079381e-01,
+         2.79743417e-02, -3.81954739e-02,  2.90623904e-02,
+         3.53302907e-02, -1.65888057e-02, -5.84655972e-02,
+        -3.34867167e-02,  6.10970716e-02,  2.04424205e-02,
+         5.37575243e-02,  3.51672979e-02,  1.09067783e-01,
+         8.93810831e-02,  2.17537420e-02,  5.28127100e-02,
+         2.95965493e-02,  1.01770787e-02, -3.89430477e-02,
+        -2.77550217e-02, -8.00727321e-03, -1.05050311e-02,
+         2.43786998e-02,  5.49408731e-02, -2.96346046e-02,
+         8.47752061e-02,  5.73115235e-02, -4.37098335e-02,
+        -2.19898164e-02,  4.76250652e-03,  5.89106400e-02,
+        -5.72828602e-02,  6.86037668e-03, -9.83484669e-02,
+        -4.12290239e-02, -4.18481339e-02, -6.02505253e-02,
+         4.84887774e-02,  4.93551132e-02,  2.55100185e-02,
+        -7.95734753e-02,  2.18708683e-02,  3.00311120e-02,
+        -7.60763436e-02,  5.77725235e-02, -6.63953087e-02,
+         5.85144949e-02,  5.52313787e-02, -9.99383052e-03,
+         9.39423110e-04, -9.02018659e-02, -1.25039746e-02,
+         3.94465163e-02, -4.72453405e-02,  3.34813603e-02,
+         3.57175874e-02, -1.73210741e-02, -1.44429802e-02,
+         3.48838847e-02, -8.56255633e-02, -1.39574273e-02,
+         1.62088806e-02, -1.83014311e-02,  6.19845822e-02,
+         4.02487125e-02, -6.61312486e-02,  4.05287854e-02,
+         3.72947352e-02, -2.41683119e-02, -2.91335586e-02,
+        -9.48510961e-02,  3.16164931e-02,  2.15039010e-02,
+         7.66971527e-03, -7.23717748e-03, -2.14563883e-02,
+        -3.48904137e-02,  1.86127139e-02,  3.60097321e-02,
+         4.77075516e-03,  7.66049113e-03,  2.00481959e-02,
+        -4.57612020e-02, -5.93408174e-02,  5.64088160e-03,
+         6.56498078e-02,  3.76999374e-02,  7.79758804e-02,
+        -4.12669242e-02, -3.87088784e-02,  3.19932736e-02,
+        -1.75108289e-02,  9.21290011e-03, -2.36964260e-02,
+        -4.60689765e-02]]), array([-0.27815123])]C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,542 | server.py:125 | fit progress: (14, 0.3642319031154177, {'accuracy': 0.8333333333333334}, 1.0603162000000008)
+DEBUG flwr 2024-07-12 15:47:26,542 | server.py:173 | evaluate_round 14: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,579 | server.py:187 | evaluate_round 14 received 6 results and 0 failures
+DEBUG flwr 2024-07-12 15:47:26,580 | server.py:223 | fit_round 15: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,644 | server.py:237 | fit_round 15 received 6 results and 0 failures
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+C:\Users\ASUS\miniconda3\envs\fl37\lib\site-packages\sklearn\base.py:444: UserWarning: X has feature names, but LogisticRegression was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+INFO flwr 2024-07-12 15:47:26,662 | server.py:125 | fit progress: (15, 0.3570758611525096, {'accuracy': 0.84}, 1.1806397000000004)
+DEBUG flwr 2024-07-12 15:47:26,662 | server.py:173 | evaluate_round 15: strategy sampled 6 clients (out of 6)
+DEBUG flwr 2024-07-12 15:47:26,697 | server.py:187 | evaluate_round 15 received 6 results and 0 failures
+INFO flwr 2024-07-12 15:47:26,698 | server.py:147 | FL finished in 1.2161766000000007
+INFO flwr 2024-07-12 15:47:26,698 | app.py:218 | app_fit: losses_distributed [(1, 0.42608335401330677), (2, 0.4087252105985369), (3, 0.3984155229159764), (4, 0.39677506259509493), (5, 0.40323457164423804), (6, 0.40997409863131384), (7, 0.40788390125547136), (8, 0.40962029227188657), (9, 0.4113869326455252), (10, 0.406611168384552), (11, 0.4109209201165608), (12, 0.40706131969179427), (13, 0.4080613715308053), (14, 0.4075147054025105), (15, 0.4102506803614753)]
+INFO flwr 2024-07-12 15:47:26,698 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-07-12 15:47:26,698 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2024-07-12 15:47:26,698 | app.py:221 | app_fit: losses_centralized [(0, 0.6931471805599453), (1, 0.4577254433579112), (2, 0.363035591446444), (3, 0.3715651068733531), (4, 0.374770762215459), (5, 0.38167236657737635), (6, 0.3594402849096482), (7, 0.364291586450934), (8, 0.3592176613317229), (9, 0.35582949776189354), (10, 0.3647695747703418), (11, 0.3559184488423), (12, 0.3645017054946848), (13, 0.3629073527041577), (14, 0.3642319031154177), (15, 0.3570758611525096)]
+INFO flwr 2024-07-12 15:47:26,699 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.42), (1, 0.79), (2, 0.8333333333333334), (3, 0.84), (4, 0.83), (5, 0.8266666666666667), (6, 0.8366666666666667), (7, 0.8333333333333334), (8, 0.8366666666666667), (9, 0.8366666666666667), (10, 0.8333333333333334), (11, 0.84), (12, 0.8333333333333334), (13, 0.8333333333333334), (14, 0.8333333333333334), (15, 0.84)]}
+
+[array([[-2.49463682e+00,  1.30074760e+00,  1.01029010e+00,
+         4.06777082e-01,  3.56149477e-01,  1.21811601e-01,
+         3.51299861e-02, -3.69577982e-02,  3.98093795e-02,
+         2.70174409e-02, -1.79627025e-02, -5.61808671e-02,
+        -3.53869008e-02,  7.30307741e-02,  1.29696959e-02,
+         4.81803363e-02,  3.37616353e-02,  1.13411967e-01,
+         9.95249321e-02,  1.33333540e-02,  5.20966005e-02,
+         3.64825421e-02,  2.36055623e-02, -3.84931992e-02,
+        -2.78275616e-02, -8.61748279e-03, -7.43437564e-03,
+         2.47073973e-02,  6.30200942e-02, -4.36459113e-02,
+         9.12071441e-02,  6.30484342e-02, -4.23697970e-02,
+        -1.70074051e-02,  1.02177278e-02,  7.64582089e-02,
+        -6.33593558e-02,  6.12019473e-03, -1.02719091e-01,
+        -4.37497445e-02, -4.72129018e-02, -6.74807890e-02,
+         4.44050874e-02,  4.94862740e-02,  2.66121695e-02,
+        -7.58918916e-02,  3.56834072e-02,  2.27257963e-02,
+        -7.35045517e-02,  6.27059225e-02, -7.84163677e-02,
+         5.93486256e-02,  5.76094648e-02, -1.02444632e-02,
+        -2.61735362e-03, -9.68997459e-02, -2.80170629e-02,
+         4.56870349e-02, -4.43877753e-02,  4.21419306e-02,
+         4.57731962e-02, -2.22265516e-02, -1.64211756e-02,
+         3.62746427e-02, -9.27820880e-02, -1.18811901e-02,
+         1.36314152e-02, -1.15155929e-02,  6.49289658e-02,
+         5.20576642e-02, -6.95502576e-02,  4.22418194e-02,
+         3.85060007e-02, -2.39442330e-02, -2.33907967e-02,
+        -1.04831213e-01,  2.89007751e-02,  1.94693698e-02,
+         4.14906053e-03, -1.50075593e-02, -1.72724711e-02,
+        -3.18524136e-02,  1.37503812e-02,  3.96675362e-02,
+         4.77912612e-04,  4.41895577e-03,  1.54078279e-02,
+        -6.54757435e-02, -6.13910329e-02,  2.98390876e-03,
+         7.76799482e-02,  3.74981913e-02,  8.74080782e-02,
+        -5.68675694e-02, -3.81449195e-02,  2.80785702e-02,
+        -2.44619609e-02,  1.76379209e-02, -2.08148836e-02,
+        -5.48126320e-02]]), array([-0.28943434])]
+>>>>>>>>>>>>>run time:
+0.640625s

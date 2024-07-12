@@ -1,4 +1,5 @@
 import os, sys, re
+import ast
 
 def extract_coefficient(path):
     print(path)
@@ -18,7 +19,23 @@ def extract_coefficient(path):
                     end += 1
                 coef = lines[i + start:i + end + 1]
                 coef = [x.strip().strip('\n') for x in coef]
+                #Low Dim
                 coef = eval(''.join(coef).replace('array', '').replace('(', '').replace(')', ''))
+
+                #High Dim
+                # coef_str = ''.join(coef)            
+                # start_index = coef_str.find('[array(')  
+                # end_index = coef_str.find('])]') + len('])]')  
+                # coef_str = coef_str[start_index:end_index]       
+                # coef_str = coef_str.replace('array', '').replace('(', '').replace(')', '')
+
+                # try:
+                #     coef = ast.literal_eval(coef_str)
+                # except (SyntaxError, ValueError) as e:
+                #     print(f"Error parsing coefficients: {e}")
+                #     coef = [] 
+            
+
     out_filename = 'coef_flwr_fedavg.txt'
     with open(os.path.join(dir, out_filename), 'w') as f:
         f.write('Coef:\n')

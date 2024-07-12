@@ -56,7 +56,7 @@ def set_initial_params(model: LogisticRegression):
     """
     print(">>>>>>>>>>>>> setting initial parameters")
     n_classes = 2
-    n_features = 100
+    n_features = 8
     model.classes_ = np.array([i for i in range(2)])
 
     model.coef_ = np.zeros((n_classes, n_features))

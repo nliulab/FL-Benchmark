@@ -22,7 +22,7 @@ if __name__ == "__main__":
         penalty="l2",
         max_iter=10,  # local epoch
         warm_start=True,  # prevent refreshing weights when fitting
-        C=100 # high dim
+        #C=100 # high dim
     )
 
     # Setting initial parameters, akin to model.compile for keras models
