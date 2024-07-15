@@ -32,8 +32,8 @@ eval.auc.1seed <- function(dir){
   res = list()
   for(i in 1:length(dat.list)){
     dat = dat.list[[i]]$dat
-    coef = get_coef(dir)
-    coef = coef[,-1]
+    coef = get_coef(dir, sparse = F)
+    #coef = get_coef(dir,p=100, sparse = T, method = c("Central","Local","Meta","DAC","SHIR","fedavg","fedprox")) #high dim
     result = eval.auc(dat$y, dat[, -which(names(dat) == "y")], coef)
     result$Site_index = i
     res = rbind(res,result)

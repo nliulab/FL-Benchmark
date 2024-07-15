@@ -1,0 +1,10 @@
+"vars","count_p_value","count_p_value_2","count_p_value_3"
+"GLORE",0,0,0
+"Meta",0.06,0.1,0.24
+"Qfedavg",0.26,0.14,0.14
+"Site1_Local",0.14,0,0
+"Site2_Local",0,0.14,0
+"Site3_Local",0.02,0.02,0.24
+"coef_fedprox_lr0.01_drop0_mu0",0,0,0.04
+"fedavg",0.06,0.3,0.5
+"fedavgM",0.06,0.32,0.42

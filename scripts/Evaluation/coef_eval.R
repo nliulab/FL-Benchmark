@@ -20,7 +20,7 @@ extract_coef <- function(dir){
   seed_list = list.dirs(dir,recursive = FALSE)
   for (seed in seed_list ){
     print(seed)
-    coef = get_coef(seed)
+    coef = get_coef(seed, sparse = F)
     new_coef = data.frame(t(coef)[-1,])
     new_coef$method = colnames(coef)[-1]
     seed_index = gsub(".*seed(\\d+).*", "\\1", seed)
@@ -38,17 +38,19 @@ mapping <- c(
   "Site1_Local" = "Local1",
   "Site2_Local" = "Local2",
   "Site3_Local" = "Local3",
+  "Meta" = "Meta",
   "GLORE" = "GLORE",
   "fedavg" = "FedAvg",
   "fedavgM" = "FedAvgM",
   "Qfedavg" = "q-FedAvg",
-  "fedprox_mu0" = "FedProx(mu0)"
+  "coef_fedprox_lr0.01_drop0_mu0" = "FedProx (μ=0)"
 )
 
 dir.create("Coef")
 for(dir in dir_list){
   coef = extract_coef(dir)
   folder_name = basename(dir)
+  coef$method = mapping[coef$method]
   write.csv(coef,paste0("Coef/",folder_name,"_coef.csv"),row.names = FALSE)
 }
 
@@ -58,8 +60,8 @@ draw_folder <- function(dir){
   folder_name = basename(dir)
   all_coef = extract_coef(dir)
   all_coef$method = mapping[all_coef$method]
-  method_levels <- c("FedProx(mu0)", "q-FedAvg","FedAvgM", "FedAvg", 
-                     "GLORE", "Local3","Local2","Local1", "Central")
+  method_levels <- c("FedProx (μ=0)", "q-FedAvg","FedAvgM", "FedAvg", 
+                     "GLORE", "Meta","Local3","Local2","Local1", "Central")
   all_coef$method <- factor(all_coef$method, levels = method_levels)
   origin_coef_all = get_origin_coef(list.dirs(dir, recursive = FALSE)[1])
   #Use site2 coefficient
@@ -79,7 +81,7 @@ draw_folder <- function(dir){
                label = bquote(beta[.(var_index)] == .(origin_coef[var_index])), 
                fontface = "bold", vjust = -0.5, size = 6) +
       scale_y_discrete(labels = c("FedProx (μ=0)", "q-FedAvg", "FedAvgM", "FedAvg", 
-                                  "GLORE", "Local3","Local2","Local1", "Central")) +
+                                  "GLORE","Meta", "Local3","Local2","Local1", "Central")) +
       theme(axis.title.y = element_blank()) +
       coord_cartesian(xlim=c(min_lim,max_lim))
     return(plot)

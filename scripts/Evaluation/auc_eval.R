@@ -31,11 +31,12 @@ mapping <- c(
   "Site1_Local" = "Local1",
   "Site2_Local" = "Local2",
   "Site3_Local" = "Local3",
+  "Meta" = "Meta",
   "GLORE" = "GLORE",
   "fedavg" = "FedAvg",
   "fedavgM" = "FedAvgM",
   "Qfedavg" = "q-FedAvg",
-  "fedprox_mu0" = "FedProx (mu=0)",
+  "coef_fedprox_lr0.01_drop0_mu0" = "FedProx (μ=0)",
   "Site_index" = "Site_index",
   "seed" = "seed"
 )
@@ -52,6 +53,10 @@ get_folder_auc = function(dir){
     seed_auc$seed = gsub(".*seed(\\d+).*", "\\1",basename(seed))
     all_auc = rbind(all_auc,seed_auc)
   }
+  col_names <- colnames(all_auc)
+  new_col_names <- mapping[col_names]
+  colnames(all_auc) <- new_col_names
+  
   write.csv(all_auc,paste0("AUC/",folder_name,"_auc.csv"),row.names = FALSE)
   return(all_auc)
 }
@@ -89,8 +94,8 @@ draw_auc <- function(dir){
   draw_violin <- function(index){
     df <- site_auc(index)
     mean_auc <- mean(df$auc)
-    method_levels <- c("Central", "Local1", "Local2", "Local3", "GLORE", 
-                       "FedAvg", "FedAvgM", "q-FedAvg", "FedProx (mu=0)")
+    method_levels <- c("Central", "Local1", "Local2", "Local3", "Meta","GLORE", 
+                       "FedAvg", "FedAvgM", "q-FedAvg", "FedProx (μ=0)")
     df$method <- factor(df$method, levels = method_levels)
     
     plot <- ggplot(df, aes(x = method, y = auc)) +
@@ -109,8 +114,8 @@ draw_auc <- function(dir){
                 hjust = 0.5, vjust = 0.5, size = 8, color = "gray30") +
       theme(axis.text.y = element_text(angle = 0, hjust = 0.5, vjust = -0.5),
             axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
-      scale_x_discrete(labels = c("Central", "Local1", "Local2", "Local3", "GLORE",
-                                  "FedAvg", "FedAvgM", "q-FedAvg", "FedProx(μ=0)")) +
+      scale_x_discrete(labels = c("Central", "Local1", "Local2", "Local3", "GLORE","Meta",
+                                  "FedAvg", "FedAvgM", "q-FedAvg", "FedProx (μ=0)")) +
       ylim(min_auc-0.01,max_auc+0.01)
 
     return(plot)
