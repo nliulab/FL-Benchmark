@@ -4,16 +4,17 @@
 - [System requirements](#system-requirements)
 - [A demo for generating and analyzing simulated data](#a-demo-for-generating-and-analyzing-simulated-data)
   - [Step I. Generate simulated data](#step-i-generate-simulated-data)
-  - [Step II. Generate local and central models](#step-ii-generate-local-and-central-models)
-  - [Step III. Generate FL models](#step-iii-generate-fl-models)
+  - [Step II. Fit local and central models](#step-ii-generate-local-and-central-models)
+  - [Step III. Fit FL models](#step-iii-generate-fl-models)
     - [(1). GLORE](#1-glore)
-    - [(2). FLower (FedAvg, q-FedAvg \& FedAvgM)](#2-flower-fedavg-q-fedavg--fedavgm)
-    - [(3). FedProx](#3-fedprox)
+    - [(2). DAC \& SHIR](#2-dac-shir)
+    - [(3). Flower (FedAvg, q-FedAvg \& FedAvgM)](#3-flower-fedavg-q-fedavg--fedavgm)
+    - [(4). FedProx](#3-fedprox)
   - [Step IV. Result analysis](#step-iv-result-analysis)
 - [Citation](#citation)
 - [Contact](#contact)
 
-Python and R workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572), [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)). 
+R and Python workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572) and [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)). 
 
 See our new [Preprint](https://arxiv.org/abs/2311.03417) for the whole story.
 
@@ -72,8 +73,10 @@ python run_glore.py ../../data/simulated/homogenous
 cd scripts/data_LR
 python extract_glore_all.py ../../data/simulated
 ```
+#### (2). DAC & SHIR
 
-#### (2). FLower (FedAvg, q-FedAvg & FedAvgM)
+
+#### (3). Flower (FedAvg, q-FedAvg & FedAvgM)
 - Change strategies in `scripts/Flower/FL_run_win.py` (Windows) or `scripts/Flower/FL_run.py` (macOS) for different FL methods:
   - Strategy 1: FedAvg
   - Strategy 2: q-FedAvg
@@ -91,7 +94,7 @@ For example:
 python scripts/data_LR/extract_flower_fedavg.py data/simulated/homogenous
 ```
 
-#### (3). FedProx
+#### (4). FedProx
 - Convert training and testing data to JSON format and copy them to the correct FedProx input data folder.
 ```
 cd scripts/data_LR
@@ -130,9 +133,15 @@ python extract_fedprox.py simulated
 
 - Communication
 
-Run script `scripts/Evaluation/extract_time.R` to extract communications for GLORE. 
+GLORE: Run script `scripts/Evaluation/extract_time.R` to extract communications for GLORE. 
 
-The average round result will be generated at `scripts/Evaluation/time_rounds`.
+DAC: The number of communication round is pre-decided by users, usually 3 is sufficient.
+
+SHIR: SHIR is a one-shot FL algorithm.
+
+FedAvg, FedAvgM, q-FedAvg and FedProx: The number of communication round is pre-decided by user through fine-tuning.
+
+<!--The average round result will be generated at `scripts/Evaluation/time_rounds`.-->
 
 
 ## Citation
