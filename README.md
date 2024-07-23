@@ -74,7 +74,8 @@ cd scripts/data_LR
 python extract_glore_all.py ../../data/simulated
 ```
 #### (2). DAC & SHIR
-
+Only for high-dimensional data.
+- Run script `scripts/R/main.R` to produce DAC and SHIR results. Point estimate results like `coef_DAC_lasso.csv` and `coef_SHIR_lasso.csv` are stored in each seed folder. 
 
 #### (3). Flower (FedAvg, q-FedAvg & FedAvgM)
 - Change strategies in `scripts/Flower/FL_run_win.py` (Windows) or `scripts/Flower/FL_run.py` (macOS) for different FL methods:
