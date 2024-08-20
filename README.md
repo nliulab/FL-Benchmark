@@ -74,7 +74,7 @@ cd scripts/data_LR
 python extract_glore_all.py ../../data/simulated
 ```
 #### (2). DAC & SHIR
-Only for high-dimensional data.
+For high-dimensional setting only.
 - Run script `scripts/R/main.R` to produce DAC and SHIR results. Point estimate results like `coef_DAC_lasso.csv` and `coef_SHIR_lasso.csv` are stored in each seed folder. 
 
 #### (3). Flower (FedAvg, q-FedAvg & FedAvgM)
@@ -132,7 +132,7 @@ python extract_fedprox.py simulated
   - Run script `scripts/Evaluation/coef_eval.R` to draw violin plots for estimated coefficients, with results stored in `scripts/Evaluation/Coef`.
 ![Coefficient Plot](scripts/Evaluation/Coef/homogenous_coef_plot.png)
 
-- Communication
+- Communication cost
 
 GLORE: Run script `scripts/Evaluation/extract_time.R` to extract communications for GLORE. 
 
