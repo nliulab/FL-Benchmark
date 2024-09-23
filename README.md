@@ -1,4 +1,10 @@
 # Federated Learning for Clinical Structured Data: A Benchmark Comparison of Engineering and Statistical Approaches
+
+
+This repository contains the R and Python workflows used for generating and analyzing simulated datasets to compare federated learning (FL) algorithms. We benchmark engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) against statistics-based FL algorithms ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572) and [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)).
+
+For a comprehensive overview of our work, please refer to our newly published [article](https://spj.science.org/doi/10.34133/hds.0196) in *Health Data Science*.
+
 - [Supplementary materials](#supplementary-materials)
 - [Introduction](#introduction)
 - [System requirements](#system-requirements)
@@ -9,14 +15,10 @@
     - [(1). GLORE](#1-glore)
     - [(2). DAC \& SHIR](#2-dac-shir)
     - [(3). Flower (FedAvg, q-FedAvg \& FedAvgM)](#3-flower-fedavg-q-fedavg--fedavgm)
-    - [(4). FedProx](#3-fedprox)
+    - [(4). FedProx](#4-fedprox)
   - [Step IV. Result analysis](#step-iv-result-analysis)
 - [Citation](#citation)
 - [Contact](#contact)
-
-R and Python workflow for generating and analyzing simulated datasets for benchmark comparisons of engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) and the statistics-based FL algorithm ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572) and [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)). 
-
-See our new [Preprint](https://arxiv.org/abs/2311.03417) for the whole story.
 
 This repository incorporates some code from [FedProx](https://github.com/litian96/FedProx) and [GLORE](https://github.com/x1jiang/glore).
 
@@ -73,7 +75,7 @@ python run_glore.py ../../data/simulated/homogenous
 cd scripts/data_LR
 python extract_glore_all.py ../../data/simulated
 ```
-#### (2). DAC & SHIR
+#### (2). DAC \& SHIR
 For high-dimensional setting only.
 - Run script `scripts/R/main.R` to produce DAC and SHIR results. Point estimate results like `coef_DAC_lasso.csv` and `coef_SHIR_lasso.csv` are stored in each seed folder. 
 
