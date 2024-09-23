@@ -1,4 +1,4 @@
-# Federated Learning for Clinical Structured Data: A Benchmark Comparison of Engineering and Statistical Approaches
+# Federated Learning in Healthcare: A Benchmark Comparison of Engineering and Statistical Approaches for Structured Data Analysis
 
 
 This repository contains the R and Python workflows used for generating and analyzing simulated datasets to compare federated learning (FL) algorithms. We benchmark engineering-based FL algorithms ([FedAvg](https://arxiv.org/abs/1602.05629), [FedAvgM](https://arxiv.org/abs/1909.06335), [q-FedAvg](https://arxiv.org/abs/1905.10497) and [FedProx](https://arxiv.org/abs/1812.06127)) against statistics-based FL algorithms ([GLORE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3422844/), [DAC](https://academic.oup.com/biostatistics/article/23/2/397/5903572) and [SHIR](https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1904958)).
