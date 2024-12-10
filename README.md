@@ -53,7 +53,6 @@ Run script `scripts/R/Sim/main.R` to generate 50 seeds of simulation, with the o
 - Run script `scripts/R/main.R` to produce global results. Point estimate results `Coef_central.csv` stored in each seed folder.
 - Run script `scripts/R/main.R` to produce meta results. Point estimate results `Coef_meta.csv` stored in each seed folder.
 
-
 ### Step III. Generate FL models
 
 #### (1). GLORE
@@ -149,7 +148,7 @@ FedAvg, FedAvgM, q-FedAvg and FedProx: The number of communication round is pre-
 
 ## Citation
 
-S. Li, et al. "Federated learning for clinical structured data: A benchmark comparison of engineering and statistical approaches." arXiv preprint arXiv:2311.03417 (2023).
+Siqi Li, Di Miao, Qiming Wu, Chuan Hong, Danny D’Agostino, Xin Li, Yilin Ning, Yuqing Shang, Ziwen Wang, Molei Liu, et al. Federated Learning in Healthcare: A Benchmark Comparison of Engineering and Statistical Approaches for Structured Data Analysis. Health Data Sci. 2024;4:0196.DOI:10.34133/hds.0196
 
 ## Contact
 
