@@ -151,7 +151,7 @@ FedAvg, FedAvgM, q-FedAvg and FedProx: The number of communication round is pre-
 
 ## Citation
 
-Siqi Li, Di Miao, Qiming Wu, Chuan Hong, Danny D’Agostino, Xin Li, Yilin Ning, Yuqing Shang, Ziwen Wang, Molei Liu, et al. Federated Learning in Healthcare: A Benchmark Comparison of Engineering and Statistical Approaches for Structured Data Analysis. Health Data Sci. 2024;4:0196.DOI:10.34133/hds.0196
+Li, S., Miao, D., Wu, Q., Hong, C., D’Agostino, D., Li, X., ... & Liu, N. (2024). Federated Learning in Healthcare: A Benchmark Comparison of Engineering and Statistical Approaches for Structured Data Analysis. Health Data Science, 4, 0196.
 
 ## Contact
 
