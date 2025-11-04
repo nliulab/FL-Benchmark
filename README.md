@@ -22,10 +22,6 @@ This repository contains the R and Python workflows used for generating and anal
 
 This repository incorporates some code from [FedProx](https://github.com/litian96/FedProx) and [GLORE](https://github.com/x1jiang/glore).
 
-## Supplementary materials
-
-<a href="Supplementary/FLB_algorithms_Supplement.pdf" download="FLB_supplmentary">Download</a> Supplementary materials
-
 ## Introduction
 
 Federated learning (FL) holds promise for safeguarding data privacy in healthcare collaborations. While the term “FL” was originally coined by the engineering community, the statistical field has also developed privacy-preserving algorithms, though these are less recognized. Our goal was to bridge this gap with the first comprehensive comparison of FL frameworks from both domains. 
